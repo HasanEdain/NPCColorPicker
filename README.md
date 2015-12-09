@@ -1,5 +1,16 @@
 # NPCColorPicker
-This is a lightweight color picker for iOS. Written in modern swift, delivered as a framework
+## This is a lightweight color picker for iOS. Written in modern swift, delivered as a framework
+
+* iOS 9.1 target
+* 100% Swift code
+* Simple adoption
+* Very lightweight (1 storyboard, no images)
+* Bitcode enabled
+
+>Note: Only the color chips are delivered by the framework, the button and the larger green chip are part of the example application.
+
+![Default Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/DefaultConfig.png?raw=true)
+![Custom Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/CustomConfig.png?raw=true)
 
 Simple use:
 1. Download code
