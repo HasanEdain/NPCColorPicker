@@ -2,7 +2,7 @@
 //  NPCColorUtility.swift
 //  NPCColorPicker
 //
-//  Created by Hasan D Edain on 12/6/15.
+//  Created by Hasan D Edain and Andrew Bush on 12/6/15.
 //  Copyright © 2015 NPC Unlimited. All rights reserved.
 //
 
