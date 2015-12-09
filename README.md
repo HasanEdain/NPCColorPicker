@@ -60,6 +60,9 @@ Bush Software <http://www.bushsoftware.com>
 * a method to provide a mask and or a frame for chips
 * more flexible color strings (RGBA, HSV, etc...)
 * more flexible layout options
+* Carthage instructions <https://github.com/Carthage/Carthage>
+* Improve / Test install and configure
+* Add unit tests.
 
 ## Feedback
 Please send feedback to <support@npcunlimited.com>
