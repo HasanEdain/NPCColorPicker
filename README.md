@@ -12,7 +12,7 @@
 ![Default Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/DefaultConfig.png?raw=true)
 ![Custom Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/CustomConfig.png?raw=true)
 
-Simple use:
+##Simple use:
 1. Download code
 
 2. Compile Framework
@@ -48,4 +48,18 @@ Simple use:
 >               self.colorView.backgroundColor = color
 >       }
     
-Now you have a color picker, what you do with it is up to you.
+# Now you have a color picker.
+What you do with it is up to you.
+
+## Created by Hasan Edain and Andrew Bush
+NPC Unlimited <http://npcunlimited.com>
+
+Bush Software <http://www.bushsoftware.com>
+
+## Possible improvements:
+* a method to provide a mask and or a frame for chips
+* more flexible color strings (RGBA, HSV, etc...)
+* more flexible layout options
+
+## Feedback
+Please send feedback to <support@npcunlimited.com>
