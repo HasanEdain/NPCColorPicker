@@ -57,12 +57,24 @@ NPC Unlimited <http://npcunlimited.com>
 Bush Software <http://www.bushsoftware.com>
 
 ## Possible improvements:
-* a method to provide a mask and or a frame for chips
-* more flexible color strings (RGBA, HSV, etc...)
-* more flexible layout options
+### Documentation
+* Improve integration tutorial
 * Carthage instructions <https://github.com/Carthage/Carthage>
+
+### Device Support
+* Make target iOS 8.0
+* Test on TVOS
+
+### Features
+* More flexible color strings (RGBA, HSV, etc...)
+* More flexible layout options
+* A method to provide a mask and or a frame for chips
+
+### Tests
 * Improve / Test install and configure
 * Add unit tests.
+* Add UI Tests
+* Add Performance test
 
 ## Feedback
 Please send feedback to <support@npcunlimited.com>
