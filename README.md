@@ -1,7 +1,7 @@
 # NPCColorPicker
 ## This is a lightweight color picker for iOS. Written in modern swift, delivered as a framework
 
-* iOS 9.1 target
+* iOS 8.0+ target
 * 100% Swift code
 * Simple adoption
 * Very lightweight (1 storyboard, no images)
