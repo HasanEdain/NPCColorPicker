@@ -45,6 +45,9 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         // You can change the shape of the touch targets for the colors
         self.colorPicker.changeMaskStyle(.circle)
 
+        // You can change the insets between cells
+        self.colorPicker.changeSpaceBetweenColors(8.0, columns: 8.0)
+
     }
 
     // Step 4) implement delegate

@@ -42,6 +42,8 @@
 >        You can change the shape of the touch targets for the colors
 >        self.colorPicker.changeMaskStyle(.roundedRect)
 >        .square, and .circle are provided as well
+>
+>        You can change the space between rows and columns of colors.
 
 9. Implement the single delegate method:
 >	    func colorChosen(color: UIColor) {
@@ -66,7 +68,6 @@ Bush Software <http://www.bushsoftware.com>
 
 ### Features
 * More flexible color strings (RGBA, HSV, etc...)
-* More flexible layout options
 * A method to provide a mask and or a frame for chips
 
 ### Tests

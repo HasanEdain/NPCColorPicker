@@ -14,6 +14,9 @@ public protocol NPCColorPickerViewDelegate {
 
 @IBDesignable class NPCColorPickerViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     var chipEdge = CGFloat(48.0)
+    var rowSpace = CGFloat(8.0)
+    var columnSpace = CGFloat(8.0)
+
     var maskType = NPCColorPickerMask.square
     var colorArray = NPCPaleteUtility.twelveColorWheel()
     @IBInspectable @IBOutlet weak var colorPickerCollection: UICollectionView!
@@ -60,12 +63,20 @@ public protocol NPCColorPickerViewDelegate {
         return CGSizeMake(self.chipEdge, self.chipEdge)
     }
 
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return columnSpace;
+    }
+
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+        return rowSpace;
+    }
+
     // MARK: - NPCColorPickerViewDelegate
     func pickerDelegate(delegate: NPCColorPickerViewDelegate) {
         colorPickerDelegate = delegate
     }
 
-    // MARK: - Visibility
+    // MARK: - Public
     func toggleVisibility() {
         self.colorPickerCollection.hidden = !self.colorPickerCollection.hidden
     }
@@ -103,6 +114,13 @@ public protocol NPCColorPickerViewDelegate {
 
     func changeColorToGradient(startColor: String, endColor: String, steps: Int) {
         colorArray = NPCPaleteUtility.colorArrayWithGradient(startColor, endColor: endColor, steps: steps)
+        self.colorPickerCollection.reloadData()
+    }
+
+    func changeSpaceBetweenColors(rows: CGFloat, columns: CGFloat) {
+        self.rowSpace = rows
+        self.columnSpace = columns
+
         self.colorPickerCollection.reloadData()
     }
 
