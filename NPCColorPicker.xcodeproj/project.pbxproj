@@ -59,6 +59,7 @@
 /* Begin PBXFileReference section */
 		FE5C1DF01C1509AC008707BA /* NPCColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPCColorPickerViewController.swift; sourceTree = "<group>"; };
 		FE5C1DF21C150AA3008707BA /* NPCColorPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NPCColorPicker.storyboard; sourceTree = "<group>"; };
+		FEAD6F8F1C1A849B006D89F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FED244901C181803006247AB /* NPCColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPCColorPicker.swift; sourceTree = "<group>"; };
 		FED244921C181ECE006247AB /* NPCColorPickerMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPCColorPickerMask.swift; sourceTree = "<group>"; };
 		FEF7BABE1C14B0E700FE46B4 /* NPCColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NPCColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +128,7 @@
 		FEF7BAB41C14B0E700FE46B4 = {
 			isa = PBXGroup;
 			children = (
+				FEAD6F8F1C1A849B006D89F9 /* README.md */,
 				FEF7BAC01C14B0E700FE46B4 /* NPCColorPicker */,
 				FEF7BACC1C14B0E700FE46B4 /* NPCColorPickerTests */,
 				FEF7BADD1C14B13900FE46B4 /* ColorPickerExample */,
@@ -530,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -572,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

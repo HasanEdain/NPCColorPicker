@@ -62,7 +62,6 @@ Bush Software <http://www.bushsoftware.com>
 * Carthage instructions <https://github.com/Carthage/Carthage>
 
 ### Device Support
-* Make target iOS 8.0
 * Test on TVOS
 
 ### Features
