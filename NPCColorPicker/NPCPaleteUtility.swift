@@ -28,6 +28,17 @@ public class NPCPaleteUtility {
         return colorArray
     }
 
+
+    public static func colorArrayWithRGBAStringArray(hexStringArray: [String]) -> [UIColor] {
+        var colorArray = [UIColor]()
+        for hexString in hexStringArray {
+            let color = NPCColorUtility.colorWithRGBA(hexString)
+            colorArray.append(color)
+        }
+
+        return colorArray
+    }
+
     public static func colorArrayWithHexStringArray(hexStringArray: [String]) -> [UIColor] {
         var colorArray = [UIColor]()
         for hexString in hexStringArray {
@@ -38,18 +49,19 @@ public class NPCPaleteUtility {
         return colorArray
     }
 
+    // These colors are specified in #ffffffff Hexidecimal form
     public static func colorArrayWithGradient(startColor: String, endColor: String, steps: Int) -> [UIColor] {
         var colorArray = [UIColor]()
 
-        let startRed = NPCColorUtility.redPercentForString(startColor)
-        let startGreen = NPCColorUtility.greenPercentForString(startColor)
-        let startBlue = NPCColorUtility.bluePercentForString(startColor)
-        let startAlpha = NPCColorUtility.alphaPercentForString(startColor)
+        let startRed = NPCColorUtility.redPercentForHexString(startColor)
+        let startGreen = NPCColorUtility.greenPercentForHexString(startColor)
+        let startBlue = NPCColorUtility.bluePercentForHexString(startColor)
+        let startAlpha = NPCColorUtility.alphaPercentForHexString(startColor)
 
-        let endRed = NPCColorUtility.redPercentForString(endColor)
-        let endGreen = NPCColorUtility.greenPercentForString(endColor)
-        let endBlue = NPCColorUtility.bluePercentForString(endColor)
-        let endAlpha = NPCColorUtility.alphaPercentForString(endColor)
+        let endRed = NPCColorUtility.redPercentForHexString(endColor)
+        let endGreen = NPCColorUtility.greenPercentForHexString(endColor)
+        let endBlue = NPCColorUtility.bluePercentForHexString(endColor)
+        let endAlpha = NPCColorUtility.alphaPercentForHexString(endColor)
 
         let redDelta = -1 * (startRed - endRed)
         let greenDelta = -1 * (startGreen - endGreen)

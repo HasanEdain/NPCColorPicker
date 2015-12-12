@@ -35,6 +35,7 @@
 >
 >        You can use your own set of colors (Alpha and hash tag #ffffffff is also supported)
 >        self.colorPicker.changeColorSet(["ffffff","ff0000","00ff00","0000ff","000000"])
+>        
 >
 >        You can set the size of the touch targets for the colors
 >        self.colorPicker.changeDiameter(32.0)
