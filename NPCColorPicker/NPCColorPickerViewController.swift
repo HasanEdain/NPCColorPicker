@@ -71,6 +71,14 @@ public protocol NPCColorPickerViewDelegate {
         return rowSpace;
     }
 
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        let width = self.colorPickerCollection.frame.size.width
+        let remainder = width % self.chipEdge
+        let pad = remainder / 2.0
+
+        return UIEdgeInsetsMake(0, pad, 0, pad)
+    }
+
     // MARK: - NPCColorPickerViewDelegate
     func pickerDelegate(delegate: NPCColorPickerViewDelegate) {
         colorPickerDelegate = delegate

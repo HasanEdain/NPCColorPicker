@@ -21,7 +21,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="roG-YS-WRP">
                                 <rect key="frame" x="20" y="0.0" width="560" height="600"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mql-hs-PCc">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Mql-hs-PCc">
                                     <size key="itemSize" width="48" height="48"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -45,10 +45,10 @@
                             </collectionView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="roG-YS-WRP" firstAttribute="leading" secondItem="ClY-r5-0vF" secondAttribute="leadingMargin" id="iGi-eZ-hsd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="roG-YS-WRP" secondAttribute="trailing" id="2nv-ta-Jfc"/>
                             <constraint firstItem="roG-YS-WRP" firstAttribute="top" secondItem="ClY-r5-0vF" secondAttribute="topMargin" id="nRM-JK-vhT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="roG-YS-WRP" secondAttribute="trailing" id="tVi-eg-oZH"/>
                             <constraint firstItem="7CL-Sj-kjb" firstAttribute="top" secondItem="roG-YS-WRP" secondAttribute="bottom" id="xOv-jq-CTO"/>
+                            <constraint firstItem="roG-YS-WRP" firstAttribute="leading" secondItem="ClY-r5-0vF" secondAttribute="leadingMargin" id="xe5-VM-c4a"/>
                         </constraints>
                     </view>
                     <connections>

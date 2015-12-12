@@ -135,7 +135,7 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         }
 
         // You can change the insets between cells
-        self.colorPicker.changeSpaceBetweenColors(horizontalSpace, columns: verticalSapace)
+        self.colorPicker.changeSpaceBetweenColors(verticalSapace, columns: horizontalSpace)
     }
 
     @IBAction func colorsSelected(sender: AnyObject) {
