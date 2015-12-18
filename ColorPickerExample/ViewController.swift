@@ -151,6 +151,9 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         case 2:
             self.colorPicker.changeColorToGradient("ff0000", endColor: "0000ff", steps: 32)
             break
+        case 3:
+            self.colorPicker.changeColorToGradientArray(["ffffff","000000","ff0000","00ff00","0000ff"], steps: 16)
+            break
         default:
             break
         }

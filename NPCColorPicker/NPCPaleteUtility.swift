@@ -101,4 +101,23 @@ public class NPCPaleteUtility {
         return colorArray
     }
 
+    public static func colorArrayWithColorStringArray(colorStrings: [String], steps: Int)->[UIColor] {
+        if colorStrings.count <= 0 {
+            return [UIColor.whiteColor()]
+        } else if colorStrings.count == 1 {
+            return NPCPaleteUtility.colorArrayWithGradient(colorStrings[0], endColor: "ffffff", steps: steps)
+        } else {
+            var gradients = [UIColor]()
+            for index in 1...(colorStrings.count - 1){
+                let start = colorStrings[index - 1]
+                let end = colorStrings[index]
+                var gradient = NPCPaleteUtility.colorArrayWithGradient(start, endColor: end, steps: steps)
+                if index > 1 {
+                    gradient.removeFirst()
+                }
+                gradients.appendContentsOf(gradient)
+            }
+            return gradients
+        }
+    }
 }

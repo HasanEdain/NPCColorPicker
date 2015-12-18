@@ -41,6 +41,10 @@ public class NPCColorPicker {
         colorPickerViewController?.changeColorToGradient(startColor, endColor: endColor, steps: steps)
     }
 
+    public func changeColorToGradientArray(colorStrings: [String], steps: Int) {
+        colorPickerViewController?.changeColorToGradientArray(colorStrings, steps: steps)
+    }
+
     public func changeSpaceBetweenColors(rows: CGFloat, columns: CGFloat) {
         colorPickerViewController?.changeSpaceBetweenColors(rows, columns: columns)
     }

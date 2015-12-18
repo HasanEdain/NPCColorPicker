@@ -125,6 +125,11 @@ public protocol NPCColorPickerViewDelegate {
         self.colorPickerCollection.reloadData()
     }
 
+    func changeColorToGradientArray(colorStrings: [String], steps: Int) {
+        colorArray = NPCPaleteUtility.colorArrayWithColorStringArray(colorStrings, steps: steps)
+        self.colorPickerCollection.reloadData()
+    }
+
     func changeSpaceBetweenColors(rows: CGFloat, columns: CGFloat) {
         self.rowSpace = rows
         self.columnSpace = columns
