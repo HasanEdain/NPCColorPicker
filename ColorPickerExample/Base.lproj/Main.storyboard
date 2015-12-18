@@ -152,11 +152,11 @@
                                     <constraint firstItem="yXO-qC-gl9" firstAttribute="top" secondItem="V7C-4o-pU8" secondAttribute="top" constant="3" id="tcZ-EE-hjG"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-TR-dRN">
-                                <rect key="frame" x="133" y="208" width="333" height="28"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-TR-dRN">
+                                <rect key="frame" x="179" y="208" width="241" height="28"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fk-Ky-MNj">
-                                        <rect key="frame" x="62" y="0.0" width="271" height="29"/>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fk-Ky-MNj">
+                                        <rect key="frame" x="62" y="0.0" width="179" height="29"/>
                                         <segments>
                                             <segment title="5"/>
                                             <segment title="12"/>
