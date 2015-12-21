@@ -71,10 +71,6 @@ Bush Software <http://www.bushsoftware.com>
 * Improve integration tutorial
 * Carthage instructions <https://github.com/Carthage/Carthage>
 
-### Device Support
-* tvOS
-* iOS
-
 ### Features
 * A method to provide a mask and or a frame for chips
 
