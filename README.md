@@ -11,6 +11,7 @@
 
 ![Default Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/DefaultConfig.png?raw=true)
 ![Custom Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/CustomConfig.png?raw=true)
+![tvOS Multi Gradient Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/tvOSMultiGradient.png?raw=true)
 
 ##Simple use:
 1. Download code
