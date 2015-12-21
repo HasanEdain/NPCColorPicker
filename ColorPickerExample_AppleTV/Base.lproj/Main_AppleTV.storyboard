@@ -63,6 +63,7 @@
                                     <segment title="Five"/>
                                     <segment title="Twelve"/>
                                     <segment title="Gradient"/>
+                                    <segment title="Multi"/>
                                 </segments>
                                 <connections>
                                     <action selector="colorsSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="Oe6-Ee-mYO"/>

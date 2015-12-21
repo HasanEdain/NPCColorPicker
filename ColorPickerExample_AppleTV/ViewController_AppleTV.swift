@@ -166,6 +166,8 @@ class ViewController_AppleTV: UIViewController, NPCColorPickerViewDelegate {
             self.colorPicker.changeColorSet(twelveColorSet)
         case 2:
             self.colorPicker.changeColorToGradient("ff0000", endColor: "0000ff", steps: 32)
+        case 3:
+            self.colorPicker.changeColorToGradientArray(["ffffff","000000","ff0000","00ff00","0000ff"], steps: 16)
         default:
             break
         }
