@@ -2,6 +2,7 @@
 ## This is a lightweight color picker for iOS. Written in modern swift, delivered as a framework
 
 * iOS 8.0+ target
+* tvOS Support
 * 100% Swift code
 * Simple adoption
 * Very lightweight (1 storyboard, no images)
@@ -71,7 +72,8 @@ Bush Software <http://www.bushsoftware.com>
 * Carthage instructions <https://github.com/Carthage/Carthage>
 
 ### Device Support
-* Test on TVOS
+* tvOS
+* iOS
 
 ### Features
 * A method to provide a mask and or a frame for chips
