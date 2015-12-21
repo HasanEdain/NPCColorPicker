@@ -8,6 +8,17 @@
 
 import UIKit
 
+#if os(tvOS)
+let bundleIdentifer = "com.npc.NPCColorPicker-AppleTV"
+let storyboardIdentifer = "NPCColorPicker_AppleTV"
+#else
+let bundleIdentifer = "com.npc.NPCColorPicker"
+let storyboardIdentifer = "NPCColorPicker"
+#endif
+
+let cellReuseIdentifier = "Cell"
+let viewControllerIdentifier = "NPCColorPickerViewController"
+
 public protocol NPCColorPickerViewDelegate {
     func colorChosen(color: UIColor)
 }
@@ -32,24 +43,28 @@ public protocol NPCColorPickerViewDelegate {
     }
 
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath)
+        var collectionCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellReuseIdentifier, forIndexPath: indexPath)
 
-        let color = self.colorArray[indexPath.row]
-        cell.backgroundView?.layer.masksToBounds = true
-        switch maskType {
-        case .square:
-            cell.layer.cornerRadius = 0.0
-            break
-        case .roundedRect:
-            cell.layer.cornerRadius = chipEdge / 6.0
-            break
-        case .circle:
-            cell.layer.cornerRadius = chipEdge / 2.0
-            break
+        if let cell = collectionCell as? NPCColorPickerCollectionViewCell {
+            let color = self.colorArray[indexPath.row]
+            let view = cell.contentView
+
+            view.layer.masksToBounds = true
+            switch maskType {
+            case .square:
+                view.layer.cornerRadius = 0.0
+                break
+            case .roundedRect:
+                view.layer.cornerRadius = chipEdge / 6.0
+                break
+            case .circle:
+                view.layer.cornerRadius = chipEdge / 2.0
+                break
+            }
+            cell.color = color
+            collectionCell = cell
         }
-        cell.backgroundColor = color
-
-        return cell
+        return collectionCell
     }
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -88,20 +103,18 @@ public protocol NPCColorPickerViewDelegate {
     func toggleVisibility() {
         self.colorPickerCollection.hidden = !self.colorPickerCollection.hidden
     }
-    
-    static func embedColorPickerInView(view:UIView, forDelegate delegate:NPCColorPickerViewDelegate)->NPCColorPickerViewController? {
-        
-        let bundle = NSBundle.init(identifier: "com.npc.NPCColorPicker")
-        let myStoryboard = UIStoryboard.init(name: "NPCColorPicker", bundle: bundle)
-        
-        if let controller = myStoryboard.instantiateViewControllerWithIdentifier("NPCColorPickerViewController") as? NPCColorPickerViewController {
+
+    static func embedColorPickerInView(view:UIView, forDelegate delegate:NPCColorPickerViewDelegate) -> NPCColorPickerViewController? {
+        let bundle = NSBundle(identifier: bundleIdentifer)
+        let myStoryboard = UIStoryboard(name: storyboardIdentifer, bundle: bundle)
+
+        if let controller = myStoryboard.instantiateViewControllerWithIdentifier(viewControllerIdentifier) as? NPCColorPickerViewController {
             controller.pickerDelegate(delegate);
             view.addSubview(controller.view)
             controller.view.frame = view.bounds
 
             return controller;
         }
-
         return nil;
     }
 
@@ -133,8 +146,8 @@ public protocol NPCColorPickerViewDelegate {
     func changeSpaceBetweenColors(rows: CGFloat, columns: CGFloat) {
         self.rowSpace = rows
         self.columnSpace = columns
-
+        
         self.colorPickerCollection.reloadData()
     }
-
+    
 }

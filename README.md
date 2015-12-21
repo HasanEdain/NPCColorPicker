@@ -62,6 +62,8 @@ NPC Unlimited <http://npcunlimited.com>
 
 Bush Software <http://www.bushsoftware.com>
 
+### tvOS integration and example application completed by Sam Warfield
+
 ## Possible improvements:
 ### Documentation
 * Improve integration tutorial

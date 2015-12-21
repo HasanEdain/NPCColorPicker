@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller AppleTV-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController_AppleTV" customModule="ColorPickerExample_AppleTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUk-N5-FH5" userLabel="Right Focus View">
+                                <rect key="frame" x="1321" y="371" width="579" height="81"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tj1-cs-laJ">
+                                <rect key="frame" x="20" y="460" width="1880" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="DMJ-FQ-SQw"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-tT-u6c">
+                                <rect key="frame" x="608" y="217" width="705" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="Square"/>
+                                    <segment title="RoundRect"/>
+                                    <segment title="Circle"/>
+                                </segments>
+                                <connections>
+                                    <action selector="shapeSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="e7f-CN-jIj"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ynD-Fp-vPE">
+                                <rect key="frame" x="607" y="140" width="706" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="706" id="xha-eH-7LN"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Small"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Large"/>
+                                </segments>
+                                <connections>
+                                    <action selector="sizeSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="6uB-mc-a0a"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XM3-3S-NGR">
+                                <rect key="frame" x="607" y="371" width="706" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="Five"/>
+                                    <segment title="Twelve"/>
+                                    <segment title="Gradient"/>
+                                    <segment title="Multi"/>
+                                </segments>
+                                <connections>
+                                    <action selector="colorsSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="Oe6-Ee-mYO"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5E-dp-tC3">
+                                <rect key="frame" x="1461" y="50" width="250" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X5E-dp-tC3" secondAttribute="height" multiplier="1:1" id="KKL-zz-n2R"/>
+                                    <constraint firstAttribute="width" constant="250" id="fcg-q8-3fg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uf-MF-pMc" userLabel="Left Focus View">
+                                <rect key="frame" x="20" y="371" width="580" height="81"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="cV4-es-XfG">
+                                <rect key="frame" x="607" y="294" width="250" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9s2-Fd-JaC"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="8"/>
+                                </segments>
+                                <connections>
+                                    <action selector="horizontalSpaceSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="hiq-g8-o3x"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="obR-u7-kHg">
+                                <rect key="frame" x="1063" y="294" width="250" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <segments>
+                                    <segment title="0"/>
+                                    <segment title="8"/>
+                                </segments>
+                                <connections>
+                                    <action selector="verticalSpaceSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="pAv-Gp-Vp1"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spacing:    Horizontal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76N-hJ-Wox">
+                                <rect key="frame" x="310" y="311" width="289" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-ao-Ja3">
+                                <rect key="frame" x="947" y="311" width="108" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHI-HS-22b">
+                                <rect key="frame" x="760" y="30" width="401" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Hide / Show Picker"/>
+                                <connections>
+                                    <action selector="pickerPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="eTE-wh-iRL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="XM3-3S-NGR" secondAttribute="bottom" constant="20" id="13t-e9-gSj"/>
+                            <constraint firstItem="X5E-dp-tC3" firstAttribute="leading" secondItem="jHI-HS-22b" secondAttribute="trailing" constant="300" id="1ho-7o-76M"/>
+                            <constraint firstItem="oUk-N5-FH5" firstAttribute="top" secondItem="XM3-3S-NGR" secondAttribute="top" id="34t-6C-eMl"/>
+                            <constraint firstItem="76N-hJ-Wox" firstAttribute="centerY" secondItem="cV4-es-XfG" secondAttribute="centerY" id="47r-Ex-SiZ"/>
+                            <constraint firstItem="ynD-Fp-vPE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5eu-d7-BBF"/>
+                            <constraint firstItem="X5E-dp-tC3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="B8U-k4-XHQ"/>
+                            <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="oUk-N5-FH5" secondAttribute="bottom" constant="8" id="C6H-eb-Xnv"/>
+                            <constraint firstItem="obR-u7-kHg" firstAttribute="width" secondItem="cV4-es-XfG" secondAttribute="width" id="Chf-vR-Qy4"/>
+                            <constraint firstItem="XM3-3S-NGR" firstAttribute="top" secondItem="obR-u7-kHg" secondAttribute="bottom" constant="8" id="DSs-Vw-9DQ"/>
+                            <constraint firstItem="ynD-Fp-vPE" firstAttribute="leading" secondItem="4uf-MF-pMc" secondAttribute="trailing" constant="7" id="K6V-n8-xNe"/>
+                            <constraint firstItem="obR-u7-kHg" firstAttribute="leading" secondItem="fhx-ao-Ja3" secondAttribute="trailing" constant="8" id="MGj-lB-BFh"/>
+                            <constraint firstItem="XM3-3S-NGR" firstAttribute="top" secondItem="cV4-es-XfG" secondAttribute="bottom" constant="8" id="MlV-hA-95h"/>
+                            <constraint firstItem="fhP-tT-u6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1O-wh-dYz"/>
+                            <constraint firstItem="jHI-HS-22b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="S6G-sK-frY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oUk-N5-FH5" secondAttribute="trailing" id="Tev-0G-4CT"/>
+                            <constraint firstItem="4uf-MF-pMc" firstAttribute="top" secondItem="XM3-3S-NGR" secondAttribute="top" id="UCI-ek-UEE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tj1-cs-laJ" secondAttribute="bottom" constant="20" id="WmM-mH-skk"/>
+                            <constraint firstItem="fhx-ao-Ja3" firstAttribute="centerY" secondItem="obR-u7-kHg" secondAttribute="centerY" id="YPg-fJ-Ghb"/>
+                            <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="4uf-MF-pMc" secondAttribute="bottom" constant="8" id="Yq1-L2-JW6"/>
+                            <constraint firstItem="cV4-es-XfG" firstAttribute="top" secondItem="fhP-tT-u6c" secondAttribute="bottom" constant="8" id="brK-AS-f5v"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Tj1-cs-laJ" secondAttribute="leading" id="c2E-A9-qA7"/>
+                            <constraint firstItem="XM3-3S-NGR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cX1-I4-8Ir"/>
+                            <constraint firstItem="oUk-N5-FH5" firstAttribute="leading" secondItem="ynD-Fp-vPE" secondAttribute="trailing" constant="8" id="cvd-Nk-Mwk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Tj1-cs-laJ" secondAttribute="trailing" id="dAl-Dm-tik"/>
+                            <constraint firstItem="jHI-HS-22b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7J-6N-xdk"/>
+                            <constraint firstItem="XM3-3S-NGR" firstAttribute="width" secondItem="ynD-Fp-vPE" secondAttribute="width" id="hCP-7A-uck"/>
+                            <constraint firstItem="obR-u7-kHg" firstAttribute="top" secondItem="fhP-tT-u6c" secondAttribute="bottom" constant="8" id="lSe-qa-TQv"/>
+                            <constraint firstItem="fhP-tT-u6c" firstAttribute="top" secondItem="ynD-Fp-vPE" secondAttribute="bottom" constant="8" id="lsB-O7-MAI"/>
+                            <constraint firstItem="cV4-es-XfG" firstAttribute="leading" secondItem="XM3-3S-NGR" secondAttribute="leading" id="nRC-Bn-wIq"/>
+                            <constraint firstItem="obR-u7-kHg" firstAttribute="trailing" secondItem="XM3-3S-NGR" secondAttribute="trailing" id="pkb-oX-AVw"/>
+                            <constraint firstItem="cV4-es-XfG" firstAttribute="leading" secondItem="76N-hJ-Wox" secondAttribute="trailing" constant="8" id="qox-wR-eTa"/>
+                            <constraint firstItem="4uf-MF-pMc" firstAttribute="leading" secondItem="Tj1-cs-laJ" secondAttribute="leading" id="wro-E8-KHs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorSelectionSegmentControl" destination="XM3-3S-NGR" id="Q04-m5-p5h"/>
+                        <outlet property="colorView" destination="X5E-dp-tC3" id="hwh-qh-ewg"/>
+                        <outlet property="embedView" destination="Tj1-cs-laJ" id="1ej-me-fAZ"/>
+                        <outlet property="horizontalSpacingSegment" destination="cV4-es-XfG" id="tlB-VU-fvF"/>
+                        <outlet property="preferredFocusedView" destination="jHI-HS-22b" id="U4a-7E-P2Q"/>
+                        <outlet property="verticalSpacingSegment" destination="obR-u7-kHg" id="2Fr-dL-8Mw"/>
+                        <outletCollection property="focusViews" destination="4uf-MF-pMc" collectionClass="NSMutableArray" id="Tx5-Is-BHO"/>
+                        <outletCollection property="focusViews" destination="oUk-N5-FH5" collectionClass="NSMutableArray" id="koV-Mc-l0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="573"/>
+        </scene>
+    </scenes>
+</document>
