@@ -2,6 +2,7 @@
 ## This is a lightweight color picker for iOS. Written in modern swift, delivered as a framework
 
 * iOS 8.0+ target
+* tvOS Support
 * 100% Swift code
 * Simple adoption
 * Very lightweight (1 storyboard, no images)
@@ -11,6 +12,7 @@
 
 ![Default Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/DefaultConfig.png?raw=true)
 ![Custom Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/CustomConfig.png?raw=true)
+![tvOS Multi Gradient Configuration](https://github.com/HasanEdain/NPCColorPicker/blob/master/ReadmeScreenShots/tvOSMultiGradient.png?raw=true)
 
 ##Simple use:
 1. Download code
@@ -68,9 +70,6 @@ Bush Software <http://www.bushsoftware.com>
 ### Documentation
 * Improve integration tutorial
 * Carthage instructions <https://github.com/Carthage/Carthage>
-
-### Device Support
-* Test on TVOS
 
 ### Features
 * A method to provide a mask and or a frame for chips
