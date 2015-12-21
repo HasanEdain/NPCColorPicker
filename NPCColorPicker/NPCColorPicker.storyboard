@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="M1z-ac-eDb">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="M1z-ac-eDb" customClass="NPCColorPickerCollectionViewCell" customModule="NPCColorPicker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -46,8 +46,8 @@
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="roG-YS-WRP" secondAttribute="trailing" id="2nv-ta-Jfc"/>
+                            <constraint firstItem="7CL-Sj-kjb" firstAttribute="top" secondItem="roG-YS-WRP" secondAttribute="bottom" id="BTP-He-PQ5"/>
                             <constraint firstItem="roG-YS-WRP" firstAttribute="top" secondItem="ClY-r5-0vF" secondAttribute="topMargin" id="nRM-JK-vhT"/>
-                            <constraint firstItem="7CL-Sj-kjb" firstAttribute="top" secondItem="roG-YS-WRP" secondAttribute="bottom" id="xOv-jq-CTO"/>
                             <constraint firstItem="roG-YS-WRP" firstAttribute="leading" secondItem="ClY-r5-0vF" secondAttribute="leadingMargin" id="xe5-VM-c4a"/>
                         </constraints>
                     </view>

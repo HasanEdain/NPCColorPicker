@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum NPCColorPickerMask {
+public enum NPCColorPickerMask: Int {
     case square
     case roundedRect
     case circle
