@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FEF7BADB1C14B13900FE46B4"
-               BuildableName = "ColorPickerExample.app"
-               BlueprintName = "ColorPickerExample"
+               BlueprintIdentifier = "FED8BC3D1C2516A9007495F0"
+               BuildableName = "NPCColorPickerExampleTVOS.app"
+               BlueprintName = "NPCColorPickerExampleTVOS"
                ReferencedContainer = "container:NPCColorPicker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FEF7BAEE1C14B13900FE46B4"
-               BuildableName = "ColorPickerExampleTests.xctest"
-               BlueprintName = "ColorPickerExampleTests"
+               BlueprintIdentifier = "FED8BC4D1C2516AA007495F0"
+               BuildableName = "NPCColorPickerExampleTVOSTests.xctest"
+               BlueprintName = "NPCColorPickerExampleTVOSTests"
                ReferencedContainer = "container:NPCColorPicker.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FEF7BAF91C14B13900FE46B4"
-               BuildableName = "ColorPickerExampleUITests.xctest"
-               BlueprintName = "ColorPickerExampleUITests"
+               BlueprintIdentifier = "FED8BC581C2516AA007495F0"
+               BuildableName = "NPCColorPickerExampleTVOSUITests.xctest"
+               BlueprintName = "NPCColorPickerExampleTVOSUITests"
+               ReferencedContainer = "container:NPCColorPicker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FED8BC781C251754007495F0"
+               BuildableName = "NPCColorPickerTVTests.xctest"
+               BlueprintName = "NPCColorPickerTVTests"
                ReferencedContainer = "container:NPCColorPicker.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -52,9 +62,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF7BADB1C14B13900FE46B4"
-            BuildableName = "ColorPickerExample.app"
-            BlueprintName = "ColorPickerExample"
+            BlueprintIdentifier = "FED8BC3D1C2516A9007495F0"
+            BuildableName = "NPCColorPickerExampleTVOS.app"
+            BlueprintName = "NPCColorPickerExampleTVOS"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,9 +85,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF7BADB1C14B13900FE46B4"
-            BuildableName = "ColorPickerExample.app"
-            BlueprintName = "ColorPickerExample"
+            BlueprintIdentifier = "FED8BC3D1C2516A9007495F0"
+            BuildableName = "NPCColorPickerExampleTVOS.app"
+            BlueprintName = "NPCColorPickerExampleTVOS"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,9 +104,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF7BADB1C14B13900FE46B4"
-            BuildableName = "ColorPickerExample.app"
-            BlueprintName = "ColorPickerExample"
+            BlueprintIdentifier = "FED8BC3D1C2516A9007495F0"
+            BuildableName = "NPCColorPickerExampleTVOS.app"
+            BlueprintName = "NPCColorPickerExampleTVOS"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
