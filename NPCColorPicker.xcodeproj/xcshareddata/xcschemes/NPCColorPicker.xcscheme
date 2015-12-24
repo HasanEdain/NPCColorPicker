@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FED8BC6F1C251754007495F0"
-               BuildableName = "NPCColorPickerTV.framework"
-               BlueprintName = "NPCColorPickerTV"
+               BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
+               BuildableName = "NPCColorPicker.framework"
+               BlueprintName = "NPCColorPicker"
                ReferencedContainer = "container:NPCColorPicker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FEF7BAC71C14B0E700FE46B4"
+               BuildableName = "NPCColorPickerTests.xctest"
+               BlueprintName = "NPCColorPickerTests"
+               ReferencedContainer = "container:NPCColorPicker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
+            BuildableName = "NPCColorPicker.framework"
+            BlueprintName = "NPCColorPicker"
+            ReferencedContainer = "container:NPCColorPicker.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FED8BC6F1C251754007495F0"
-            BuildableName = "NPCColorPickerTV.framework"
-            BlueprintName = "NPCColorPickerTV"
+            BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
+            BuildableName = "NPCColorPicker.framework"
+            BlueprintName = "NPCColorPicker"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FED8BC6F1C251754007495F0"
-            BuildableName = "NPCColorPickerTV.framework"
-            BlueprintName = "NPCColorPickerTV"
+            BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
+            BuildableName = "NPCColorPicker.framework"
+            BlueprintName = "NPCColorPicker"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
