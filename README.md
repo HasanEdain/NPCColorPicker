@@ -17,7 +17,8 @@
 ##Simple use:
 1. Download code
 
-2. Compile Framework
+2. Compile Framework 
+>  Can use Carthage here for iOS: github "HasanEdain/NPCColorPicker"
 
 3. Add Framework to your project
 
@@ -68,8 +69,7 @@ Bush Software <http://www.bushsoftware.com>
 
 ## Possible improvements:
 ### Documentation
-* Improve integration tutorial
-* Carthage instructions <https://github.com/Carthage/Carthage>
+* Fix Carthage for tvOS
 
 ### Features
 * A method to provide a mask and or a frame for chips
