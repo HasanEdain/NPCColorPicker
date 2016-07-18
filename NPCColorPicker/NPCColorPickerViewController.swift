@@ -87,11 +87,15 @@ public protocol NPCColorPickerViewDelegate {
     }
 
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        let width = self.colorPickerCollection.frame.size.width
-        let remainder = width % self.chipEdge
-        let pad = remainder / 2.0
-
-        return UIEdgeInsetsMake(0, pad, 0, pad)
+        let width = self.colorPickerCollection.bounds.size.width
+        let widthRemainder = width % self.chipEdge
+        let widthPad = widthRemainder / 2.0
+        
+        let height = self.colorPickerCollection.bounds.size.height
+        let heightRemainder = height % self.chipEdge
+        let heightpad = heightRemainder / 2.0
+        
+        return UIEdgeInsetsMake(heightpad, widthPad, heightpad, widthPad)
     }
 
     // MARK: - NPCColorPickerViewDelegate
