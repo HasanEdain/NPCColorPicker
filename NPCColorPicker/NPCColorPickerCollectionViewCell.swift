@@ -8,11 +8,12 @@
 
 import UIKit
 
+@IBDesignable
 class NPCColorPickerCollectionViewCell: UICollectionViewCell
 {
     @IBOutlet weak var imageView: UIImageView!
 
-    var color: UIColor? {
+    @IBInspectable var color: UIColor? {
         didSet {
             if let imageView = imageView, color = color
             {
