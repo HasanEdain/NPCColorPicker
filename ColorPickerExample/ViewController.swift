@@ -25,24 +25,24 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         colorView.backgroundColor = NPCColorUtility.colorWithHex("#00ff00ff")
-        colorView.layer.borderColor = UIColor.blackColor().CGColor
+        colorView.layer.borderColor = UIColor.black.cgColor
         colorView.layer.borderWidth = 4.0
         colorView.layer.cornerRadius = 8
         colorView.layer.masksToBounds = true
     }
 
-    
-    override func viewWillAppear(animated: Bool) {
+
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         // Step 3) place colorPicker in Embed View (see Main Storyboard for example)
-        self.colorPicker.embedColorPickerInView(self.embedView, forDelegate: self)
+        _ = self.colorPicker.embedColorPickerInView(self.embedView, forDelegate: self)
         updatePaleteSpacing()
     }
 
     // Step 4) implement delegate
     // MARK: - NPCColorPickerViewDelegate
-    func colorChosen(color: UIColor) {
+    func colorChosen(_ color: UIColor) {
         self.colorView.backgroundColor = color
     }
 
