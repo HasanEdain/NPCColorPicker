@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,60 +16,53 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-jA-5J2">
-                                <rect key="frame" x="268" y="28" width="64" height="64"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="1Uh-JY-XSM"/>
                                     <constraint firstAttribute="width" constant="64" id="mfW-aY-XVP"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLb-Cn-3bl">
-                                <rect key="frame" x="151" y="172" width="299" height="28"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5e-tb-XDZ">
-                                        <rect key="frame" x="61" y="3" width="17" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awo-AV-pGg">
-                                        <rect key="frame" x="0.0" y="3" width="53" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="xA3-Tt-Kr6">
-                                        <rect key="frame" x="86" y="0.0" width="91" height="29"/>
                                         <segments>
                                             <segment title="zero"/>
                                             <segment title="eight"/>
                                         </segments>
                                         <connections>
-                                            <action selector="horizontalSpaceSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="l7g-zX-J0U"/>
+                                            <action selector="horizontalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="BUX-s8-G5e"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-0H-cS4">
-                                        <rect key="frame" x="185" y="3" width="15" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pc9-fz-aNV">
-                                        <rect key="frame" x="208" y="0.0" width="91" height="29"/>
                                         <segments>
                                             <segment title="zero"/>
                                             <segment title="eight"/>
                                         </segments>
                                         <connections>
-                                            <action selector="verticalSpaceSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="HML-56-rEE"/>
+                                            <action selector="verticalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="vEp-Bt-nDg"/>
                                         </connections>
                                     </segmentedControl>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Awo-AV-pGg" firstAttribute="top" secondItem="YLb-Cn-3bl" secondAttribute="top" constant="3" id="7AS-LM-xxa"/>
                                     <constraint firstAttribute="bottom" secondItem="Awo-AV-pGg" secondAttribute="bottom" constant="4" id="L40-Nk-RXK"/>
@@ -89,27 +83,24 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5C-ut-AW0">
-                                <rect key="frame" x="165" y="100" width="270" height="28"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cag-fF-qGr">
-                                        <rect key="frame" x="61" y="0.0" width="209" height="29"/>
                                         <segments>
                                             <segment title="Square"/>
                                             <segment title="Rounded"/>
                                             <segment title="Circle"/>
                                         </segments>
                                         <connections>
-                                            <action selector="shapeSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="0oO-77-IKv"/>
+                                            <action selector="shapeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="4mP-3F-NV3"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shape:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nc-9L-CIf">
-                                        <rect key="frame" x="0.0" y="3" width="53.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Cag-fF-qGr" firstAttribute="top" secondItem="F5C-ut-AW0" secondAttribute="top" id="FYI-wN-ruC"/>
                                     <constraint firstAttribute="bottom" secondItem="1Nc-9L-CIf" secondAttribute="bottom" constant="4" id="RrE-FL-cwN"/>
@@ -121,27 +112,24 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7C-4o-pU8">
-                                <rect key="frame" x="182" y="136" width="236" height="28"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="5nz-uF-8cf">
-                                        <rect key="frame" x="45" y="0.0" width="191" height="29"/>
                                         <segments>
                                             <segment title="Small"/>
                                             <segment title="Medium"/>
                                             <segment title="Large"/>
                                         </segments>
                                         <connections>
-                                            <action selector="sizeSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="jnN-Mj-R96"/>
+                                            <action selector="sizeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="6t7-6h-aKl"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXO-qC-gl9">
-                                        <rect key="frame" x="0.0" y="3" width="37" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="5nz-uF-8cf" secondAttribute="trailing" id="1YM-t3-0Qg"/>
                                     <constraint firstItem="5nz-uF-8cf" firstAttribute="leading" secondItem="yXO-qC-gl9" secondAttribute="trailing" constant="8" id="3zp-Ei-Rfq"/>
@@ -153,10 +141,8 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgF-TR-dRN">
-                                <rect key="frame" x="179" y="208" width="241" height="28"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Fk-Ky-MNj">
-                                        <rect key="frame" x="62" y="0.0" width="179" height="29"/>
                                         <segments>
                                             <segment title="5"/>
                                             <segment title="12"/>
@@ -164,17 +150,16 @@
                                             <segment title="Multi"/>
                                         </segments>
                                         <connections>
-                                            <action selector="colorsSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="RLO-sA-T5v"/>
+                                            <action selector="colorsSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="rhX-YH-1c2"/>
                                         </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Colors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjA-Lk-P2U">
-                                        <rect key="frame" x="0.0" y="3" width="54.5" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="fjA-Lk-P2U" firstAttribute="top" secondItem="vgF-TR-dRN" secondAttribute="top" constant="3" id="7Eu-M0-k1a"/>
                                     <constraint firstItem="6Fk-Ky-MNj" firstAttribute="top" secondItem="vgF-TR-dRN" secondAttribute="top" id="D6d-Cx-L8N"/>
@@ -186,18 +171,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-2x-Hwd">
-                                <rect key="frame" x="0.0" y="244" width="600" height="348"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMy-iO-8E6">
-                                <rect key="frame" x="217" y="45" width="43" height="30"/>
                                 <state key="normal" title="Picker"/>
                                 <connections>
                                     <action selector="pickerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vj4-kj-33F"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.9382580519" green="0.87337857480000003" blue="0.68462300300000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="backgroundColor" red="0.92120730876922607" green="0.84832108020782471" blue="0.62377798557281494" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="o0l-jA-5J2" firstAttribute="centerY" secondItem="dMy-iO-8E6" secondAttribute="centerY" id="0sb-9P-RyH"/>
                             <constraint firstItem="vgF-TR-dRN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Lw-qJ-9Ps"/>

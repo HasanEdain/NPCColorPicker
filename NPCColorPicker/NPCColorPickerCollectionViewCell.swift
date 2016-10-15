@@ -15,9 +15,9 @@ class NPCColorPickerCollectionViewCell: UICollectionViewCell
 
     @IBInspectable var color: UIColor? {
         didSet {
-            if let imageView = imageView, color = color
+            if let imageView = imageView, let color = color
             {
-                imageView.image = UIImage.imageWithColor(color)
+                imageView.image = UIImage.imageWithColor(color: color)
             }
             else
             {
@@ -29,12 +29,18 @@ class NPCColorPickerCollectionViewCell: UICollectionViewCell
 
 extension UIImage {
     class func imageWithColor(color: UIColor) -> UIImage {
-        let rect = CGRectMake(0, 0, 1, 1)
-        UIGraphicsBeginImageContextWithOptions(CGSizeMake(1, 1), false, 0)
+        let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 1, height: 1), false, 0)
         color.setFill()
         UIRectFill(rect)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
+
+        var returnImage = UIImage()
+
+        if let image = UIGraphicsGetImageFromCurrentImageContext() {
+            returnImage = image
+        }
         UIGraphicsEndImageContext()
-        return image
+
+        return returnImage
     }
 }

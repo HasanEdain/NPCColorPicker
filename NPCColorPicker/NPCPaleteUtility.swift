@@ -12,18 +12,18 @@ public class NPCPaleteUtility {
 
     public static func twelveColorWheel()->[UIColor] {
         let colorArray =
-        [NPCColorUtility.colorWithHex("fe7923"),
-        NPCColorUtility.colorWithHex("fd0d1b"),
-        NPCColorUtility.colorWithHex("bf1698"),
-        NPCColorUtility.colorWithHex("941abe"),
-        NPCColorUtility.colorWithHex("6819bd"),
-        NPCColorUtility.colorWithHex("1024fc"),
-        NPCColorUtility.colorWithHex("1ec0a8"),
-        NPCColorUtility.colorWithHex("1dbb20"),
-        NPCColorUtility.colorWithHex("c7f131"),
-        NPCColorUtility.colorWithHex("e8ea34"),
-        NPCColorUtility.colorWithHex("fad931"),
-        NPCColorUtility.colorWithHex("feb92b")]
+        [NPCColorUtility.colorWithHex(hexString: "fe7923"),
+        NPCColorUtility.colorWithHex(hexString: "fd0d1b"),
+        NPCColorUtility.colorWithHex(hexString: "bf1698"),
+        NPCColorUtility.colorWithHex(hexString: "941abe"),
+        NPCColorUtility.colorWithHex(hexString: "6819bd"),
+        NPCColorUtility.colorWithHex(hexString: "1024fc"),
+        NPCColorUtility.colorWithHex(hexString: "1ec0a8"),
+        NPCColorUtility.colorWithHex(hexString: "1dbb20"),
+        NPCColorUtility.colorWithHex(hexString: "c7f131"),
+        NPCColorUtility.colorWithHex(hexString: "e8ea34"),
+        NPCColorUtility.colorWithHex(hexString: "fad931"),
+        NPCColorUtility.colorWithHex(hexString: "feb92b")]
 
         return colorArray
     }
@@ -32,7 +32,7 @@ public class NPCPaleteUtility {
     public static func colorArrayWithRGBAStringArray(hexStringArray: [String]) -> [UIColor] {
         var colorArray = [UIColor]()
         for hexString in hexStringArray {
-            let color = NPCColorUtility.colorWithRGBA(hexString)
+            let color = NPCColorUtility.colorWithRGBA(rgbaString: hexString)
             colorArray.append(color)
         }
 
@@ -42,7 +42,7 @@ public class NPCPaleteUtility {
     public static func colorArrayWithHexStringArray(hexStringArray: [String]) -> [UIColor] {
         var colorArray = [UIColor]()
         for hexString in hexStringArray {
-            let color = NPCColorUtility.colorWithHex(hexString)
+            let color = NPCColorUtility.colorWithHex(hexString: hexString)
             colorArray.append(color)
         }
 
@@ -53,15 +53,15 @@ public class NPCPaleteUtility {
     public static func colorArrayWithGradient(startColor: String, endColor: String, steps: Int) -> [UIColor] {
         var colorArray = [UIColor]()
 
-        let startRed = NPCColorUtility.redPercentForHexString(startColor)
-        let startGreen = NPCColorUtility.greenPercentForHexString(startColor)
-        let startBlue = NPCColorUtility.bluePercentForHexString(startColor)
-        let startAlpha = NPCColorUtility.alphaPercentForHexString(startColor)
+        let startRed = NPCColorUtility.redPercentForHexString(colorString: startColor as NSString)
+        let startGreen = NPCColorUtility.greenPercentForHexString(colorString: startColor as NSString)
+        let startBlue = NPCColorUtility.bluePercentForHexString(colorString: startColor as NSString)
+        let startAlpha = NPCColorUtility.alphaPercentForHexString(colorString: startColor as NSString)
 
-        let endRed = NPCColorUtility.redPercentForHexString(endColor)
-        let endGreen = NPCColorUtility.greenPercentForHexString(endColor)
-        let endBlue = NPCColorUtility.bluePercentForHexString(endColor)
-        let endAlpha = NPCColorUtility.alphaPercentForHexString(endColor)
+        let endRed = NPCColorUtility.redPercentForHexString(colorString: endColor as NSString)
+        let endGreen = NPCColorUtility.greenPercentForHexString(colorString: endColor as NSString)
+        let endBlue = NPCColorUtility.bluePercentForHexString(colorString: endColor as NSString)
+        let endAlpha = NPCColorUtility.alphaPercentForHexString(colorString: endColor as NSString)
 
         let redDelta = -1 * (startRed - endRed)
         let greenDelta = -1 * (startGreen - endGreen)
@@ -103,19 +103,19 @@ public class NPCPaleteUtility {
 
     public static func colorArrayWithColorStringArray(colorStrings: [String], steps: Int)->[UIColor] {
         if colorStrings.count <= 0 {
-            return [UIColor.whiteColor()]
+            return [UIColor.white]
         } else if colorStrings.count == 1 {
-            return NPCPaleteUtility.colorArrayWithGradient(colorStrings[0], endColor: "ffffff", steps: steps)
+            return NPCPaleteUtility.colorArrayWithGradient(startColor: colorStrings[0], endColor: "ffffff", steps: steps)
         } else {
             var gradients = [UIColor]()
             for index in 1...(colorStrings.count - 1){
                 let start = colorStrings[index - 1]
                 let end = colorStrings[index]
-                var gradient = NPCPaleteUtility.colorArrayWithGradient(start, endColor: end, steps: steps)
+                var gradient = NPCPaleteUtility.colorArrayWithGradient(startColor: start, endColor: end, steps: steps)
                 if index > 1 {
                     gradient.removeFirst()
                 }
-                gradients.appendContentsOf(gradient)
+                gradients.append(contentsOf: gradient)
             }
             return gradients
         }

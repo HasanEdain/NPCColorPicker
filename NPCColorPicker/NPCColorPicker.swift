@@ -16,7 +16,7 @@ public class NPCColorPicker {
     }
 
      public func embedColorPickerInView(view:UIView, forDelegate delegate:NPCColorPickerViewDelegate) -> NPCColorPicker {
-        colorPickerViewController = NPCColorPickerViewController.embedColorPickerInView(view, forDelegate: delegate)
+        colorPickerViewController = NPCColorPickerViewController.embedColorPickerInView(view: view, forDelegate: delegate)
 
         return self;
     }
@@ -26,26 +26,26 @@ public class NPCColorPicker {
     }
 
     public func changeDiameter(diameter: CGFloat) {
-        colorPickerViewController?.changeDiameter(diameter)
+        colorPickerViewController?.changeDiameter(diameter: diameter)
     }
 
     public func changeMaskStyle(style: NPCColorPickerMask) {
-        colorPickerViewController?.changeMaskStyle(style)
+        colorPickerViewController?.changeMaskStyle(style: style)
     }
 
     public func changeColorSet(colorArrayString: [String]) {
-        colorPickerViewController?.changeColorSet(colorArrayString)
+        colorPickerViewController?.changeColorSet(colorArrayString: colorArrayString)
     }
 
     public func changeColorToGradient(startColor: String, endColor: String, steps: Int) {
-        colorPickerViewController?.changeColorToGradient(startColor, endColor: endColor, steps: steps)
+        colorPickerViewController?.changeColorToGradient(startColor: startColor, endColor: endColor, steps: steps)
     }
 
     public func changeColorToGradientArray(colorStrings: [String], steps: Int) {
-        colorPickerViewController?.changeColorToGradientArray(colorStrings, steps: steps)
+        colorPickerViewController?.changeColorToGradientArray(colorStrings: colorStrings, steps: steps)
     }
 
     public func changeSpaceBetweenColors(rows: CGFloat, columns: CGFloat) {
-        colorPickerViewController?.changeSpaceBetweenColors(rows, columns: columns)
+        colorPickerViewController?.changeSpaceBetweenColors(rows: rows, columns: columns)
     }
 }

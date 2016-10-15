@@ -24,19 +24,20 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        colorView.backgroundColor = NPCColorUtility.colorWithHex("#00ff00ff")
-        colorView.layer.borderColor = UIColor.blackColor().CGColor
+        colorView.backgroundColor = NPCColorUtility.colorWithHex(hexString: "#00ff00ff")
+        colorView.layer.borderColor = UIColor.black.cgColor
         colorView.layer.borderWidth = 4.0
         colorView.layer.cornerRadius = 8
         colorView.layer.masksToBounds = true
     }
 
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         // Step 3) place colorPicker in Embed View (see Main Storyboard for example)
-        self.colorPicker.embedColorPickerInView(self.embedView, forDelegate: self)
+        _ = self.colorPicker.embedColorPickerInView(view: self.embedView, forDelegate: self)
+
         updatePaleteSpacing()
     }
 
@@ -72,7 +73,7 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         }
 
         // You can change the shape of the touch targets for the colors
-        self.colorPicker.changeMaskStyle(shape)
+        self.colorPicker.changeMaskStyle(style: shape)
     }
 
     @IBAction func sizeSelected(sender: AnyObject) {
@@ -96,7 +97,7 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         }
 
         // You can set the size of the touch targets for the colors
-        self.colorPicker.changeDiameter(size)
+        self.colorPicker.changeDiameter(diameter: size)
     }
 
     @IBAction func horizontalSpaceSelected(sender: AnyObject) {
@@ -135,7 +136,7 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         }
 
         // You can change the insets between cells
-        self.colorPicker.changeSpaceBetweenColors(verticalSapace, columns: horizontalSpace)
+        self.colorPicker.changeSpaceBetweenColors(rows: verticalSapace, columns: horizontalSpace)
     }
 
     @IBAction func colorsSelected(sender: AnyObject) {
@@ -143,16 +144,16 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
 
         switch colorSegment.selectedSegmentIndex {
         case 0:
-            self.colorPicker.changeColorSet(["ffffff", "ff0000", "00ff00", "0000ff", "000000"])
+            self.colorPicker.changeColorSet(colorArrayString: ["ffffff", "ff0000", "00ff00", "0000ff", "000000"])
             break
         case 1:
-            self.colorPicker.changeColorSet(["fe7923", "fd0d1b", "bf1698", "941abe", "6819bd", "1024fc", "1ec0a8", "1dbb20", "c7f131", "e8ea34", "fad931", "feb92b"])
+            self.colorPicker.changeColorSet(colorArrayString: ["fe7923", "fd0d1b", "bf1698", "941abe", "6819bd", "1024fc", "1ec0a8", "1dbb20", "c7f131", "e8ea34", "fad931", "feb92b"])
             break
         case 2:
-            self.colorPicker.changeColorToGradient("ff0000", endColor: "0000ff", steps: 32)
+            self.colorPicker.changeColorToGradient(startColor: "ff0000", endColor: "0000ff", steps: 32)
             break
         case 3:
-            self.colorPicker.changeColorToGradientArray(["ffffff","000000","ff0000","00ff00","0000ff"], steps: 16)
+            self.colorPicker.changeColorToGradientArray(colorStrings: ["ffffff","000000","ff0000","00ff00","0000ff"], steps: 16)
             break
         default:
             break

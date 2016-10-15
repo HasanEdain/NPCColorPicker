@@ -3,7 +3,7 @@
 
 * iOS 8.0+ target
 * tvOS Support
-* 100% Swift code
+* 100% Swift 3 code
 * Simple adoption
 * Very lightweight (1 storyboard, no images)
 * Bitcode enabled

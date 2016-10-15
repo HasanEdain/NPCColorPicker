@@ -34,16 +34,16 @@ public protocol NPCColorPickerViewDelegate {
     var colorPickerDelegate: NPCColorPickerViewDelegate?
 
     // MARK: - Collection View
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    private func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
 
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.colorArray.count
     }
 
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var collectionCell = collectionView.dequeueReusableCellWithReuseIdentifier(cellReuseIdentifier, forIndexPath: indexPath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var collectionCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellReuseIdentifier, for: indexPath as IndexPath)
 
         if let cell = collectionCell as? NPCColorPickerCollectionViewCell {
             let color = self.colorArray[indexPath.row]
@@ -67,28 +67,30 @@ public protocol NPCColorPickerViewDelegate {
         return collectionCell
     }
 
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    private func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: IndexPath) {
         if let delegate = self.colorPickerDelegate {
             let selectedColor = colorArray[indexPath.row]
-            delegate.colorChosen(selectedColor)
+            delegate.colorChosen(color: selectedColor)
         }
     }
 
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(self.chipEdge, self.chipEdge)
+    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let size: CGSize = CGSize(width: self.chipEdge, height: self.chipEdge)
+
+        return size
     }
 
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
+    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAtIndex section: Int) -> CGFloat {
         return columnSpace;
     }
 
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
+    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAtIndex section: Int) -> CGFloat {
         return rowSpace;
     }
 
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+    private func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
         let width = self.colorPickerCollection.frame.size.width
-        let remainder = width % self.chipEdge
+        let remainder = width .truncatingRemainder(dividingBy: self.chipEdge)
         let pad = remainder / 2.0
 
         return UIEdgeInsetsMake(0, pad, 0, pad)
@@ -101,15 +103,15 @@ public protocol NPCColorPickerViewDelegate {
 
     // MARK: - Public
     func toggleVisibility() {
-        self.colorPickerCollection.hidden = !self.colorPickerCollection.hidden
+        self.colorPickerCollection.isHidden = !self.colorPickerCollection.isHidden
     }
 
     static func embedColorPickerInView(view:UIView, forDelegate delegate:NPCColorPickerViewDelegate) -> NPCColorPickerViewController? {
-        let bundle = NSBundle(identifier: bundleIdentifer)
+        let bundle = Bundle(identifier: bundleIdentifer)
         let myStoryboard = UIStoryboard(name: storyboardIdentifer, bundle: bundle)
 
-        if let controller = myStoryboard.instantiateViewControllerWithIdentifier(viewControllerIdentifier) as? NPCColorPickerViewController {
-            controller.pickerDelegate(delegate);
+        if let controller = myStoryboard.instantiateViewController(withIdentifier: viewControllerIdentifier) as? NPCColorPickerViewController {
+            controller.pickerDelegate(delegate: delegate);
             view.addSubview(controller.view)
             controller.view.frame = view.bounds
 
@@ -129,17 +131,17 @@ public protocol NPCColorPickerViewDelegate {
     }
 
     func changeColorSet(colorArrayString: [String]) {
-        colorArray = NPCPaleteUtility.colorArrayWithHexStringArray(colorArrayString)
+        colorArray = NPCPaleteUtility.colorArrayWithHexStringArray(hexStringArray: colorArrayString)
         self.colorPickerCollection.reloadData()
     }
 
     func changeColorToGradient(startColor: String, endColor: String, steps: Int) {
-        colorArray = NPCPaleteUtility.colorArrayWithGradient(startColor, endColor: endColor, steps: steps)
+        colorArray = NPCPaleteUtility.colorArrayWithGradient(startColor: startColor, endColor: endColor, steps: steps)
         self.colorPickerCollection.reloadData()
     }
 
     func changeColorToGradientArray(colorStrings: [String], steps: Int) {
-        colorArray = NPCPaleteUtility.colorArrayWithColorStringArray(colorStrings, steps: steps)
+        colorArray = NPCPaleteUtility.colorArrayWithColorStringArray(colorStrings: colorStrings, steps: steps)
         self.colorPickerCollection.reloadData()
     }
 
