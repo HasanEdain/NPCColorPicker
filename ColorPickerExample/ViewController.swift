@@ -25,33 +25,33 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         colorView.backgroundColor = NPCColorUtility.colorWithHex("#00ff00ff")
-        colorView.layer.borderColor = UIColor.blackColor().CGColor
+        colorView.layer.borderColor = UIColor.black.cgColor
         colorView.layer.borderWidth = 4.0
         colorView.layer.cornerRadius = 8
         colorView.layer.masksToBounds = true
     }
 
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         // Step 3) place colorPicker in Embed View (see Main Storyboard for example)
-        self.colorPicker.embedColorPickerInView(self.embedView, forDelegate: self)
+        _ = self.colorPicker.embedColorPickerInView(self.embedView, forDelegate: self)
         updatePaleteSpacing()
     }
 
     // Step 4) implement delegate
     // MARK: - NPCColorPickerViewDelegate
-    func colorChosen(color: UIColor) {
+    func colorChosen(_ color: UIColor) {
         self.colorView.backgroundColor = color
     }
 
     // MARK: - Actions
-    @IBAction func pickerPressed(sender: AnyObject) {
+    @IBAction func pickerPressed(_ sender: AnyObject) {
         colorPicker.toggleVisibility()
     }
 
-    @IBAction func shapeSelected(sender: AnyObject) {
+    @IBAction func shapeSelected(_ sender: AnyObject) {
         let shapeSegment = sender as! UISegmentedControl
 
         var shape = NPCColorPickerMask.square
@@ -75,7 +75,7 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         self.colorPicker.changeMaskStyle(shape)
     }
 
-    @IBAction func sizeSelected(sender: AnyObject) {
+    @IBAction func sizeSelected(_ sender: AnyObject) {
         let sizeSegment = sender as! UISegmentedControl
 
         var size: CGFloat
@@ -99,11 +99,11 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         self.colorPicker.changeDiameter(size)
     }
 
-    @IBAction func horizontalSpaceSelected(sender: AnyObject) {
+    @IBAction func horizontalSpaceSelected(_ sender: AnyObject) {
         updatePaleteSpacing()
     }
 
-    @IBAction func verticalSpaceSelected(sender: AnyObject) {
+    @IBAction func verticalSpaceSelected(_ sender: AnyObject) {
         updatePaleteSpacing()
     }
 
@@ -138,7 +138,7 @@ class ViewController: UIViewController, NPCColorPickerViewDelegate {
         self.colorPicker.changeSpaceBetweenColors(verticalSapace, columns: horizontalSpace)
     }
 
-    @IBAction func colorsSelected(sender: AnyObject) {
+    @IBAction func colorsSelected(_ sender: AnyObject) {
         let colorSegment = sender as! UISegmentedControl
 
         switch colorSegment.selectedSegmentIndex {

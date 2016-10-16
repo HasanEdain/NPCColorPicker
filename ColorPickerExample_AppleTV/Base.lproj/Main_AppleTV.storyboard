@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller AppleTV-->
@@ -19,31 +21,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUk-N5-FH5" userLabel="Right Focus View">
-                                <rect key="frame" x="1321" y="371" width="579" height="81"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tj1-cs-laJ">
-                                <rect key="frame" x="20" y="460" width="1880" height="600"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="600" id="DMJ-FQ-SQw"/>
                                 </constraints>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-tT-u6c">
-                                <rect key="frame" x="608" y="217" width="705" height="70"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Square"/>
                                     <segment title="RoundRect"/>
                                     <segment title="Circle"/>
                                 </segments>
                                 <connections>
-                                    <action selector="shapeSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="e7f-CN-jIj"/>
+                                    <action selector="shapeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="s4x-V3-KJK"/>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ynD-Fp-vPE">
-                                <rect key="frame" x="607" y="140" width="706" height="70"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="706" id="xha-eH-7LN"/>
                                 </constraints>
@@ -53,12 +51,11 @@
                                     <segment title="Large"/>
                                 </segments>
                                 <connections>
-                                    <action selector="sizeSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="6uB-mc-a0a"/>
+                                    <action selector="sizeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="mW9-CD-XA0"/>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XM3-3S-NGR">
-                                <rect key="frame" x="607" y="371" width="706" height="70"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="Five"/>
                                     <segment title="Twelve"/>
@@ -66,24 +63,21 @@
                                     <segment title="Multi"/>
                                 </segments>
                                 <connections>
-                                    <action selector="colorsSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="Oe6-Ee-mYO"/>
+                                    <action selector="colorsSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="3R2-4s-4xb"/>
                                 </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5E-dp-tC3">
-                                <rect key="frame" x="1461" y="50" width="250" height="250"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="X5E-dp-tC3" secondAttribute="height" multiplier="1:1" id="KKL-zz-n2R"/>
                                     <constraint firstAttribute="width" constant="250" id="fcg-q8-3fg"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uf-MF-pMc" userLabel="Left Focus View">
-                                <rect key="frame" x="20" y="371" width="580" height="81"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="cV4-es-XfG">
-                                <rect key="frame" x="607" y="294" width="250" height="70"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="9s2-Fd-JaC"/>
                                 </constraints>
@@ -92,42 +86,38 @@
                                     <segment title="8"/>
                                 </segments>
                                 <connections>
-                                    <action selector="horizontalSpaceSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="hiq-g8-o3x"/>
+                                    <action selector="horizontalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="mxs-73-OwA"/>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="obR-u7-kHg">
-                                <rect key="frame" x="1063" y="294" width="250" height="70"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <segments>
                                     <segment title="0"/>
                                     <segment title="8"/>
                                 </segments>
                                 <connections>
-                                    <action selector="verticalSpaceSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="pAv-Gp-Vp1"/>
+                                    <action selector="verticalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="sYA-nS-QTa"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spacing:    Horizontal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76N-hJ-Wox">
-                                <rect key="frame" x="310" y="311" width="289" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-ao-Ja3">
-                                <rect key="frame" x="947" y="311" width="108" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHI-HS-22b">
-                                <rect key="frame" x="760" y="30" width="401" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Hide / Show Picker"/>
                                 <connections>
-                                    <action selector="pickerPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="eTE-wh-iRL"/>
+                                    <action selector="pickerPressedWithSender:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="DDT-Jl-TJz"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="XM3-3S-NGR" secondAttribute="bottom" constant="20" id="13t-e9-gSj"/>
                             <constraint firstItem="X5E-dp-tC3" firstAttribute="leading" secondItem="jHI-HS-22b" secondAttribute="trailing" constant="300" id="1ho-7o-76M"/>
@@ -166,7 +156,7 @@
                     <connections>
                         <outlet property="colorSelectionSegmentControl" destination="XM3-3S-NGR" id="Q04-m5-p5h"/>
                         <outlet property="colorView" destination="X5E-dp-tC3" id="hwh-qh-ewg"/>
-                        <outlet property="embedView" destination="Tj1-cs-laJ" id="1ej-me-fAZ"/>
+                        <outlet property="embedView" destination="Tj1-cs-laJ" id="T2j-8c-nsY"/>
                         <outlet property="horizontalSpacingSegment" destination="cV4-es-XfG" id="tlB-VU-fvF"/>
                         <outlet property="preferredFocusedView" destination="jHI-HS-22b" id="U4a-7E-P2Q"/>
                         <outlet property="verticalSpacingSegment" destination="obR-u7-kHg" id="2Fr-dL-8Mw"/>
@@ -179,4 +169,9 @@
             <point key="canvasLocation" x="294" y="573"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
 </document>
