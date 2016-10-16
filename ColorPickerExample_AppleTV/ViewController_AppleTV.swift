@@ -28,17 +28,17 @@ class ViewController_AppleTV: UIViewController, NPCColorPickerViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         colorView.backgroundColor = NPCColorUtility.colorWithHex("#00ff00ff")
-        colorView.layer.borderColor = UIColor.blackColor().CGColor
+        colorView.layer.borderColor = UIColor.black.cgColor
         colorView.layer.borderWidth = 4.0
         colorView.layer.cornerRadius = 8
         colorView.layer.masksToBounds = true
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         // Step 3) place colorPicker in Embed View (see Main Storyboard for example)
-        self.colorPicker.embedColorPickerInView(self.embedView, forDelegate: self)
+        _ = self.colorPicker.embedColorPickerInView(self.embedView, forDelegate: self)
 
         // Setup defaults
         self.colorPicker.changeDiameter(200)
@@ -55,12 +55,12 @@ class ViewController_AppleTV: UIViewController, NPCColorPickerViewDelegate {
             view.addLayoutGuide(focusGuide)
 
             // Anchor the top left of the focus guide.
-            focusGuide.leftAnchor.constraintEqualToAnchor(view.leftAnchor).active = true
-            focusGuide.topAnchor.constraintEqualToAnchor(view.topAnchor).active = true
+            focusGuide.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+            focusGuide.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
 
             // Anchor the width and height of the focus guide.
-            focusGuide.widthAnchor.constraintEqualToAnchor(view.widthAnchor).active = true
-            focusGuide.heightAnchor.constraintEqualToAnchor(view.heightAnchor).active = true
+            focusGuide.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+            focusGuide.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
 
             focusGuide.preferredFocusedView = colorSelectionSegmentControl
         }
@@ -68,7 +68,7 @@ class ViewController_AppleTV: UIViewController, NPCColorPickerViewDelegate {
 
     // Step 4) implement delegate
     // MARK: - NPCColorPickerViewDelegate
-    func colorChosen(color: UIColor) {
+    func colorChosen(_ color: UIColor) {
         self.colorView.backgroundColor = color
     }
 

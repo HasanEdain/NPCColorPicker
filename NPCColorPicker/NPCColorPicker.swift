@@ -8,44 +8,44 @@
 
 import Foundation
 
-public class NPCColorPicker {
+open class NPCColorPicker {
     var colorPickerViewController: NPCColorPickerViewController?
 
     public init() {
         colorPickerViewController = NPCColorPickerViewController()
     }
 
-     public func embedColorPickerInView(view:UIView, forDelegate delegate:NPCColorPickerViewDelegate) -> NPCColorPicker {
+     open func embedColorPickerInView(_ view:UIView, forDelegate delegate:NPCColorPickerViewDelegate) -> NPCColorPicker {
         colorPickerViewController = NPCColorPickerViewController.embedColorPickerInView(view, forDelegate: delegate)
 
         return self;
     }
 
-    public func toggleVisibility() {
+    open func toggleVisibility() {
         colorPickerViewController?.toggleVisibility()
     }
 
-    public func changeDiameter(diameter: CGFloat) {
+    open func changeDiameter(_ diameter: CGFloat) {
         colorPickerViewController?.changeDiameter(diameter)
     }
 
-    public func changeMaskStyle(style: NPCColorPickerMask) {
+    open func changeMaskStyle(_ style: NPCColorPickerMask) {
         colorPickerViewController?.changeMaskStyle(style)
     }
 
-    public func changeColorSet(colorArrayString: [String]) {
+    open func changeColorSet(_ colorArrayString: [String]) {
         colorPickerViewController?.changeColorSet(colorArrayString)
     }
 
-    public func changeColorToGradient(startColor: String, endColor: String, steps: Int) {
+    open func changeColorToGradient(_ startColor: String, endColor: String, steps: Int) {
         colorPickerViewController?.changeColorToGradient(startColor, endColor: endColor, steps: steps)
     }
 
-    public func changeColorToGradientArray(colorStrings: [String], steps: Int) {
+    open func changeColorToGradientArray(_ colorStrings: [String], steps: Int) {
         colorPickerViewController?.changeColorToGradientArray(colorStrings, steps: steps)
     }
 
-    public func changeSpaceBetweenColors(rows: CGFloat, columns: CGFloat) {
+    open func changeSpaceBetweenColors(_ rows: CGFloat, columns: CGFloat) {
         colorPickerViewController?.changeSpaceBetweenColors(rows, columns: columns)
     }
 }
