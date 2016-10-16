@@ -176,7 +176,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMy-iO-8E6">
                                 <state key="normal" title="Picker"/>
                                 <connections>
-                                    <action selector="pickerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vj4-kj-33F"/>
+                                    <action selector="pickerPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZK8-Mv-iu0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -202,7 +202,7 @@
                     </view>
                     <connections>
                         <outlet property="colorView" destination="o0l-jA-5J2" id="hQH-VD-hPN"/>
-                        <outlet property="embedView" destination="7tV-2x-Hwd" id="sEg-Ld-3SS"/>
+                        <outlet property="embedView" destination="7tV-2x-Hwd" id="Kno-dO-Wq4"/>
                         <outlet property="horizontalSpacingSegment" destination="xA3-Tt-Kr6" id="5al-l6-8Io"/>
                         <outlet property="verticalSpacingSegment" destination="Pc9-fz-aNV" id="vTa-1d-8RG"/>
                     </connections>
