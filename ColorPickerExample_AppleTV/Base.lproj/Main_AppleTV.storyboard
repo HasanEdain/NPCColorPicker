@@ -23,6 +23,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHI-HS-22b">
+                                <rect key="frame" x="760" y="70" width="400" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Hide / Show Picker"/>
+                                <connections>
+                                    <action selector="pickerPressedWithSender:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="DDT-Jl-TJz"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUk-N5-FH5" userLabel="Right Focus View">
                                 <rect key="frame" x="1729" y="359" width="81" height="81"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,14 +51,6 @@
                                     <constraint firstAttribute="height" constant="81" id="tfw-m7-tgg"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHI-HS-22b">
-                                <rect key="frame" x="760" y="70" width="400" height="86"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Hide / Show Picker"/>
-                                <connections>
-                                    <action selector="pickerPressedWithSender:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="DDT-Jl-TJz"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-9f-z39">
                                 <rect key="frame" x="434" y="164" width="1052" height="276"/>
                                 <subviews>
@@ -166,7 +166,6 @@
                         <outlet property="colorView" destination="X5E-dp-tC3" id="hwh-qh-ewg"/>
                         <outlet property="embedView" destination="Tj1-cs-laJ" id="T2j-8c-nsY"/>
                         <outlet property="horizontalSpacingSegment" destination="cV4-es-XfG" id="tlB-VU-fvF"/>
-                        <outlet property="preferredFocusedView" destination="jHI-HS-22b" id="U4a-7E-P2Q"/>
                         <outlet property="verticalSpacingSegment" destination="obR-u7-kHg" id="2Fr-dL-8Mw"/>
                         <outletCollection property="focusViews" destination="4uf-MF-pMc" collectionClass="NSMutableArray" id="Tx5-Is-BHO"/>
                         <outletCollection property="focusViews" destination="oUk-N5-FH5" collectionClass="NSMutableArray" id="koV-Mc-l0a"/>

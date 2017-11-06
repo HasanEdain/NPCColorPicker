@@ -16,8 +16,6 @@
 		63AB99461C250A3000D79A27 /* ColorPickerExample_AppleTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB99451C250A3000D79A27 /* ColorPickerExample_AppleTVTests.swift */; };
 		63AB99511C250A3000D79A27 /* ColorPickerExample_AppleTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB99501C250A3000D79A27 /* ColorPickerExample_AppleTVUITests.swift */; };
 		63AB99751C269CB400D79A27 /* NPCColorPicker_AppleTV.h in Headers */ = {isa = PBXBuildFile; fileRef = 63AB99741C269CB400D79A27 /* NPCColorPicker_AppleTV.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63AB997C1C269CB400D79A27 /* NPCColorPicker_AppleTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63AB99721C269CB400D79A27 /* NPCColorPicker_AppleTV.framework */; };
-		63AB99811C269CB400D79A27 /* NPCColorPicker_AppleTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB99801C269CB400D79A27 /* NPCColorPicker_AppleTVTests.swift */; };
 		63AB998B1C269D5700D79A27 /* NPCColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C1DF01C1509AC008707BA /* NPCColorPickerViewController.swift */; };
 		63AB998C1C269D5700D79A27 /* NPCColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7BB0E1C14B3CF00FE46B4 /* NPCColorUtility.swift */; };
 		63AB998D1C269D5700D79A27 /* NPCPaleteUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7BB101C14BD1900FE46B4 /* NPCPaleteUtility.swift */; };
@@ -63,13 +61,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 63AB99301C250A3000D79A27;
 			remoteInfo = ColorPickerExample_AppleTV;
-		};
-		63AB997D1C269CB400D79A27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FEF7BAB51C14B0E700FE46B4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63AB99711C269CB400D79A27;
-			remoteInfo = NPCColorPicker_AppleTV;
 		};
 		FEF7BACA1C14B0E700FE46B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -118,7 +109,6 @@
 		63AB99721C269CB400D79A27 /* NPCColorPicker_AppleTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NPCColorPicker_AppleTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AB99741C269CB400D79A27 /* NPCColorPicker_AppleTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NPCColorPicker_AppleTV.h; sourceTree = "<group>"; };
 		63AB99761C269CB400D79A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		63AB997B1C269CB400D79A27 /* NPCColorPicker_AppleTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NPCColorPicker_AppleTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AB99801C269CB400D79A27 /* NPCColorPicker_AppleTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPCColorPicker_AppleTVTests.swift; sourceTree = "<group>"; };
 		63AB99821C269CB400D79A27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63AB99941C26A22D00D79A27 /* NPCColorPickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NPCColorPickerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -177,14 +167,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63AB99781C269CB400D79A27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63AB997C1C269CB400D79A27 /* NPCColorPicker_AppleTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +321,6 @@
 				63AB99411C250A3000D79A27 /* ColorPickerExample_AppleTVTests.xctest */,
 				63AB994C1C250A3000D79A27 /* ColorPickerExample_AppleTVUITests.xctest */,
 				63AB99721C269CB400D79A27 /* NPCColorPicker_AppleTV.framework */,
-				63AB997B1C269CB400D79A27 /* NPCColorPicker_AppleTVTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -494,24 +475,6 @@
 			productReference = 63AB99721C269CB400D79A27 /* NPCColorPicker_AppleTV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		63AB997A1C269CB400D79A27 /* NPCColorPicker_AppleTVTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63AB99861C269CB400D79A27 /* Build configuration list for PBXNativeTarget "NPCColorPicker_AppleTVTests" */;
-			buildPhases = (
-				63AB99771C269CB400D79A27 /* Sources */,
-				63AB99781C269CB400D79A27 /* Frameworks */,
-				63AB99791C269CB400D79A27 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				63AB997E1C269CB400D79A27 /* PBXTargetDependency */,
-			);
-			name = NPCColorPicker_AppleTVTests;
-			productName = NPCColorPicker_AppleTVTests;
-			productReference = 63AB997B1C269CB400D79A27 /* NPCColorPicker_AppleTVTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		FEF7BABD1C14B0E700FE46B4 /* NPCColorPicker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEF7BAD21C14B0E700FE46B4 /* Build configuration list for PBXNativeTarget "NPCColorPicker" */;
@@ -614,13 +577,16 @@
 				TargetAttributes = {
 					63AB99301C250A3000D79A27 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0910;
 					};
 					63AB99401C250A3000D79A27 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0910;
 						TestTargetID = 63AB99301C250A3000D79A27;
 					};
 					63AB994B1C250A3000D79A27 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0910;
 						TestTargetID = 63AB99301C250A3000D79A27;
 					};
 					63AB99711C269CB400D79A27 = {
@@ -628,16 +594,14 @@
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
-					63AB997A1C269CB400D79A27 = {
-						CreatedOnToolsVersion = 7.2;
-						LastSwiftMigration = 0910;
-					};
 					FEF7BABD1C14B0E700FE46B4 = {
 						CreatedOnToolsVersion = 7.1.1;
 						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
 					};
 					FEF7BAC71C14B0E700FE46B4 = {
 						CreatedOnToolsVersion = 7.1.1;
+						LastSwiftMigration = 0910;
 					};
 					FEF7BADB1C14B13900FE46B4 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -669,12 +633,11 @@
 			projectRoot = "";
 			targets = (
 				FEF7BABD1C14B0E700FE46B4 /* NPCColorPicker */,
-				FEF7BAC71C14B0E700FE46B4 /* NPCColorPickerTests */,
-				63AB99711C269CB400D79A27 /* NPCColorPicker_AppleTV */,
-				63AB997A1C269CB400D79A27 /* NPCColorPicker_AppleTVTests */,
 				FEF7BADB1C14B13900FE46B4 /* ColorPickerExample */,
+				FEF7BAC71C14B0E700FE46B4 /* NPCColorPickerTests */,
 				FEF7BAEE1C14B13900FE46B4 /* ColorPickerExampleTests */,
 				FEF7BAF91C14B13900FE46B4 /* ColorPickerExampleUITests */,
+				63AB99711C269CB400D79A27 /* NPCColorPicker_AppleTV */,
 				63AB99301C250A3000D79A27 /* ColorPickerExample_AppleTV */,
 				63AB99401C250A3000D79A27 /* ColorPickerExample_AppleTVTests */,
 				63AB994B1C250A3000D79A27 /* ColorPickerExample_AppleTVUITests */,
@@ -711,13 +674,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63749E1F1C26AA26001E6AF0 /* NPCColorPicker_AppleTV.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63AB99791C269CB400D79A27 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,14 +757,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63AB99771C269CB400D79A27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63AB99811C269CB400D79A27 /* NPCColorPicker_AppleTVTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FEF7BAB91C14B0E700FE46B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -872,11 +820,6 @@
 			isa = PBXTargetDependency;
 			target = 63AB99301C250A3000D79A27 /* ColorPickerExample_AppleTV */;
 			targetProxy = 63AB994D1C250A3000D79A27 /* PBXContainerItemProxy */;
-		};
-		63AB997E1C269CB400D79A27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 63AB99711C269CB400D79A27 /* NPCColorPicker_AppleTV */;
-			targetProxy = 63AB997D1C269CB400D79A27 /* PBXContainerItemProxy */;
 		};
 		FEF7BACB1C14B0E700FE46B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -950,9 +893,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
 		};
@@ -969,9 +913,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -985,9 +930,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorPickerExample_AppleTV.app/ColorPickerExample_AppleTV";
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
 		};
@@ -1001,9 +947,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorPickerExample_AppleTV.app/ColorPickerExample_AppleTV";
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -1016,9 +963,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = ColorPickerExample_AppleTV;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
@@ -1032,9 +980,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = ColorPickerExample_AppleTV;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 				USES_XCTRUNNER = YES;
 			};
 			name = Release;
@@ -1064,7 +1013,7 @@
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Debug;
 		};
@@ -1093,33 +1042,7 @@
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TVOS_DEPLOYMENT_TARGET = 11.0;
-			};
-			name = Release;
-		};
-		63AB99871C269CB400D79A27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NPCColorPicker_AppleTVTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.npc.NPCColorPicker-AppleTVTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		63AB99881C269CB400D79A27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = NPCColorPicker_AppleTVTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.npc.NPCColorPicker-AppleTVTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 			};
 			name = Release;
 		};
@@ -1236,8 +1159,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1247,6 +1172,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.npc.NPCColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1261,8 +1187,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1272,6 +1200,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.npc.NPCColorPicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -1287,7 +1216,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.npc.NPCColorPickerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1298,7 +1228,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.npc.NPCColorPickerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -1427,15 +1358,6 @@
 			buildConfigurations = (
 				63AB99841C269CB400D79A27 /* Debug */,
 				63AB99851C269CB400D79A27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		63AB99861C269CB400D79A27 /* Build configuration list for PBXNativeTarget "NPCColorPicker_AppleTVTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63AB99871C269CB400D79A27 /* Debug */,
-				63AB99881C269CB400D79A27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,7 +3,7 @@
 //  ColorPickerExample_AppleTVTests
 //
 //  Created by Sam Warfield on 12/18/15.
-//  Copyright © 2015 NPC Unlimited. All rights reserved.
+//  Copyright © 2015-2017 NPC Unlimited. All rights reserved.
 //
 
 import XCTest
@@ -28,9 +28,7 @@ class ColorPickerExample_AppleTVTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+        self.measure    {      // Put the code you want to measure the time of here.
         }
     }
-    
 }

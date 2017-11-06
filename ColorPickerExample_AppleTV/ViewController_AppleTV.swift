@@ -3,7 +3,7 @@
 //  ColorPickerExample_AppleTV
 //
 //  Created by Sam Warfield on 12/18/15.
-//  Copyright © 2015 NPC Unlimited. All rights reserved.
+//  Copyright © 2015-2017 NPC Unlimited. All rights reserved.
 //
 
 import UIKit
@@ -62,7 +62,7 @@ class ViewController_AppleTV: UIViewController, NPCColorPickerViewDelegate {
             focusGuide.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
             focusGuide.heightAnchor.constraint(equalTo: view.heightAnchor).isActive = true
 
-            focusGuide.preferredFocusedView = colorSelectionSegmentControl
+            focusGuide.preferredFocusEnvironments = [colorSelectionSegmentControl]
         }
     }
 
