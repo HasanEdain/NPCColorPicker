@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="13529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,136 +23,141 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUk-N5-FH5" userLabel="Right Focus View">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tj1-cs-laJ">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="600" id="DMJ-FQ-SQw"/>
-                                </constraints>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-tT-u6c">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <segments>
-                                    <segment title="Square"/>
-                                    <segment title="RoundRect"/>
-                                    <segment title="Circle"/>
-                                </segments>
-                                <connections>
-                                    <action selector="shapeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="s4x-V3-KJK"/>
-                                </connections>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ynD-Fp-vPE">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="706" id="xha-eH-7LN"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                                <connections>
-                                    <action selector="sizeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="mW9-CD-XA0"/>
-                                </connections>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XM3-3S-NGR">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <segments>
-                                    <segment title="Five"/>
-                                    <segment title="Twelve"/>
-                                    <segment title="Gradient"/>
-                                    <segment title="Multi"/>
-                                </segments>
-                                <connections>
-                                    <action selector="colorsSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="3R2-4s-4xb"/>
-                                </connections>
-                            </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5E-dp-tC3">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="X5E-dp-tC3" secondAttribute="height" multiplier="1:1" id="KKL-zz-n2R"/>
-                                    <constraint firstAttribute="width" constant="250" id="fcg-q8-3fg"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uf-MF-pMc" userLabel="Left Focus View">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="cV4-es-XfG">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="9s2-Fd-JaC"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="0"/>
-                                    <segment title="8"/>
-                                </segments>
-                                <connections>
-                                    <action selector="horizontalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="mxs-73-OwA"/>
-                                </connections>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="obR-u7-kHg">
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
-                                <segments>
-                                    <segment title="0"/>
-                                    <segment title="8"/>
-                                </segments>
-                                <connections>
-                                    <action selector="verticalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="sYA-nS-QTa"/>
-                                </connections>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spacing:    Horizontal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76N-hJ-Wox">
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-ao-Ja3">
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHI-HS-22b">
+                                <rect key="frame" x="760" y="70" width="400" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Hide / Show Picker"/>
                                 <connections>
                                     <action selector="pickerPressedWithSender:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="DDT-Jl-TJz"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oUk-N5-FH5" userLabel="Right Focus View">
+                                <rect key="frame" x="1729" y="359" width="81" height="81"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="Ngb-kf-F6S"/>
+                                    <constraint firstAttribute="width" constant="81" id="tw0-D7-dIF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tj1-cs-laJ">
+                                <rect key="frame" x="110" y="448" width="1700" height="552"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uf-MF-pMc" userLabel="Left Focus View">
+                                <rect key="frame" x="110" y="359" width="81" height="81"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="nKU-gT-lB7"/>
+                                    <constraint firstAttribute="height" constant="81" id="tfw-m7-tgg"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-9f-z39">
+                                <rect key="frame" x="434" y="164" width="1052" height="276"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XlY-iB-ZkK">
+                                        <rect key="frame" x="0.0" y="0.0" width="776" height="276"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ynD-Fp-vPE">
+                                                <rect key="frame" x="0.0" y="0.0" width="776" height="70"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <segments>
+                                                    <segment title="Small"/>
+                                                    <segment title="Medium"/>
+                                                    <segment title="Large"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="sizeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="mW9-CD-XA0"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fhP-tT-u6c">
+                                                <rect key="frame" x="0.0" y="69" width="776" height="70"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <segments>
+                                                    <segment title="Square"/>
+                                                    <segment title="RoundRect"/>
+                                                    <segment title="Circle"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="shapeSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="s4x-V3-KJK"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmq-ui-ZGc">
+                                                <rect key="frame" x="0.0" y="138" width="776" height="69"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spacing:    Horizontal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="76N-hJ-Wox">
+                                                        <rect key="frame" x="0.0" y="0.0" width="288" height="69"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="cV4-es-XfG">
+                                                        <rect key="frame" x="288" y="0.0" width="140" height="70"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <segments>
+                                                            <segment title="0"/>
+                                                            <segment title="8"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="horizontalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="mxs-73-OwA"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-ao-Ja3">
+                                                        <rect key="frame" x="428" y="0.0" width="108" height="69"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="obR-u7-kHg">
+                                                        <rect key="frame" x="536" y="0.0" width="240" height="70"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <segments>
+                                                            <segment title="0"/>
+                                                            <segment title="8"/>
+                                                        </segments>
+                                                        <connections>
+                                                            <action selector="verticalSpaceSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="sYA-nS-QTa"/>
+                                                        </connections>
+                                                    </segmentedControl>
+                                                </subviews>
+                                            </stackView>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="XM3-3S-NGR">
+                                                <rect key="frame" x="0.0" y="207" width="776" height="70"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <segments>
+                                                    <segment title="Five"/>
+                                                    <segment title="Twelve"/>
+                                                    <segment title="Gradient"/>
+                                                    <segment title="Multi"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="colorsSelectedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="3R2-4s-4xb"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X5E-dp-tC3">
+                                        <rect key="frame" x="776" y="0.0" width="276" height="276"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="X5E-dp-tC3" secondAttribute="height" multiplier="1:1" id="KKL-zz-n2R"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="XM3-3S-NGR" secondAttribute="bottom" constant="20" id="13t-e9-gSj"/>
-                            <constraint firstItem="X5E-dp-tC3" firstAttribute="leading" secondItem="jHI-HS-22b" secondAttribute="trailing" constant="300" id="1ho-7o-76M"/>
-                            <constraint firstItem="oUk-N5-FH5" firstAttribute="top" secondItem="XM3-3S-NGR" secondAttribute="top" id="34t-6C-eMl"/>
-                            <constraint firstItem="76N-hJ-Wox" firstAttribute="centerY" secondItem="cV4-es-XfG" secondAttribute="centerY" id="47r-Ex-SiZ"/>
-                            <constraint firstItem="ynD-Fp-vPE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5eu-d7-BBF"/>
-                            <constraint firstItem="X5E-dp-tC3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="B8U-k4-XHQ"/>
+                            <constraint firstItem="qwZ-9f-z39" firstAttribute="top" secondItem="jHI-HS-22b" secondAttribute="bottom" constant="8" id="9XE-kg-iV0"/>
+                            <constraint firstItem="qwZ-9f-z39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A75-EM-MkE"/>
                             <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="oUk-N5-FH5" secondAttribute="bottom" constant="8" id="C6H-eb-Xnv"/>
-                            <constraint firstItem="obR-u7-kHg" firstAttribute="width" secondItem="cV4-es-XfG" secondAttribute="width" id="Chf-vR-Qy4"/>
-                            <constraint firstItem="XM3-3S-NGR" firstAttribute="top" secondItem="obR-u7-kHg" secondAttribute="bottom" constant="8" id="DSs-Vw-9DQ"/>
-                            <constraint firstItem="ynD-Fp-vPE" firstAttribute="leading" secondItem="4uf-MF-pMc" secondAttribute="trailing" constant="7" id="K6V-n8-xNe"/>
-                            <constraint firstItem="obR-u7-kHg" firstAttribute="leading" secondItem="fhx-ao-Ja3" secondAttribute="trailing" constant="8" id="MGj-lB-BFh"/>
-                            <constraint firstItem="XM3-3S-NGR" firstAttribute="top" secondItem="cV4-es-XfG" secondAttribute="bottom" constant="8" id="MlV-hA-95h"/>
-                            <constraint firstItem="fhP-tT-u6c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1O-wh-dYz"/>
-                            <constraint firstItem="jHI-HS-22b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="S6G-sK-frY"/>
+                            <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="qwZ-9f-z39" secondAttribute="bottom" constant="8" id="Cii-IS-N6d"/>
+                            <constraint firstItem="Tj1-cs-laJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="FQV-Eq-ZbU"/>
+                            <constraint firstItem="jHI-HS-22b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="S6G-sK-frY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oUk-N5-FH5" secondAttribute="trailing" id="Tev-0G-4CT"/>
-                            <constraint firstItem="4uf-MF-pMc" firstAttribute="top" secondItem="XM3-3S-NGR" secondAttribute="top" id="UCI-ek-UEE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Tj1-cs-laJ" secondAttribute="bottom" constant="20" id="WmM-mH-skk"/>
-                            <constraint firstItem="fhx-ao-Ja3" firstAttribute="centerY" secondItem="obR-u7-kHg" secondAttribute="centerY" id="YPg-fJ-Ghb"/>
                             <constraint firstItem="Tj1-cs-laJ" firstAttribute="top" secondItem="4uf-MF-pMc" secondAttribute="bottom" constant="8" id="Yq1-L2-JW6"/>
-                            <constraint firstItem="cV4-es-XfG" firstAttribute="top" secondItem="fhP-tT-u6c" secondAttribute="bottom" constant="8" id="brK-AS-f5v"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="Tj1-cs-laJ" secondAttribute="leading" id="c2E-A9-qA7"/>
-                            <constraint firstItem="XM3-3S-NGR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cX1-I4-8Ir"/>
-                            <constraint firstItem="oUk-N5-FH5" firstAttribute="leading" secondItem="ynD-Fp-vPE" secondAttribute="trailing" constant="8" id="cvd-Nk-Mwk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Tj1-cs-laJ" secondAttribute="trailing" id="dAl-Dm-tik"/>
+                            <constraint firstItem="Tj1-cs-laJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bzw-rd-Z0B"/>
                             <constraint firstItem="jHI-HS-22b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e7J-6N-xdk"/>
-                            <constraint firstItem="XM3-3S-NGR" firstAttribute="width" secondItem="ynD-Fp-vPE" secondAttribute="width" id="hCP-7A-uck"/>
-                            <constraint firstItem="obR-u7-kHg" firstAttribute="top" secondItem="fhP-tT-u6c" secondAttribute="bottom" constant="8" id="lSe-qa-TQv"/>
-                            <constraint firstItem="fhP-tT-u6c" firstAttribute="top" secondItem="ynD-Fp-vPE" secondAttribute="bottom" constant="8" id="lsB-O7-MAI"/>
-                            <constraint firstItem="cV4-es-XfG" firstAttribute="leading" secondItem="XM3-3S-NGR" secondAttribute="leading" id="nRC-Bn-wIq"/>
-                            <constraint firstItem="obR-u7-kHg" firstAttribute="trailing" secondItem="XM3-3S-NGR" secondAttribute="trailing" id="pkb-oX-AVw"/>
-                            <constraint firstItem="cV4-es-XfG" firstAttribute="leading" secondItem="76N-hJ-Wox" secondAttribute="trailing" constant="8" id="qox-wR-eTa"/>
                             <constraint firstItem="4uf-MF-pMc" firstAttribute="leading" secondItem="Tj1-cs-laJ" secondAttribute="leading" id="wro-E8-KHs"/>
                         </constraints>
                     </view>
@@ -158,7 +166,6 @@
                         <outlet property="colorView" destination="X5E-dp-tC3" id="hwh-qh-ewg"/>
                         <outlet property="embedView" destination="Tj1-cs-laJ" id="T2j-8c-nsY"/>
                         <outlet property="horizontalSpacingSegment" destination="cV4-es-XfG" id="tlB-VU-fvF"/>
-                        <outlet property="preferredFocusedView" destination="jHI-HS-22b" id="U4a-7E-P2Q"/>
                         <outlet property="verticalSpacingSegment" destination="obR-u7-kHg" id="2Fr-dL-8Mw"/>
                         <outletCollection property="focusViews" destination="4uf-MF-pMc" collectionClass="NSMutableArray" id="Tx5-Is-BHO"/>
                         <outletCollection property="focusViews" destination="oUk-N5-FH5" collectionClass="NSMutableArray" id="koV-Mc-l0a"/>
@@ -169,9 +176,4 @@
             <point key="canvasLocation" x="294" y="573"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <nil key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
-        <simulatedScreenMetrics key="destination"/>
-    </simulatedMetricsContainer>
 </document>

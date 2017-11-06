@@ -3,7 +3,7 @@
 //  NPCColorPickerTests
 //
 //  Created by Hasan D Edain and Andrew Bush on 12/6/15.
-//  Copyright © 2015 NPC Unlimited. All rights reserved.
+//  Copyright © 2015-2017 NPC Unlimited. All rights reserved.
 //
 
 import XCTest
@@ -28,7 +28,7 @@ class NPCColorPickerTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

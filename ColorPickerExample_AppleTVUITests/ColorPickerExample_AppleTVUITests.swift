@@ -3,7 +3,7 @@
 //  ColorPickerExample_AppleTVUITests
 //
 //  Created by Sam Warfield on 12/18/15.
-//  Copyright © 2015 NPC Unlimited. All rights reserved.
+//  Copyright © 2015-2017 NPC Unlimited. All rights reserved.
 //
 
 import XCTest

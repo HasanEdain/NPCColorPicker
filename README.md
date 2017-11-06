@@ -1,9 +1,9 @@
 # NPCColorPicker
 ## This is a lightweight color picker for iOS. Written in modern swift, delivered as a framework
 
-* iOS 8.0+ target
-* tvOS Support
-* 100% Swift code
+* iOS 10.3+ target (you can adjust project to use older)
+* tvOS Support (tvOS 10.2 and later)
+* 100% Swift 4.0 code (almost no code changes for swift 3.1 if you need)
 * Simple adoption
 * Very lightweight (1 storyboard, no images)
 * Bitcode enabled

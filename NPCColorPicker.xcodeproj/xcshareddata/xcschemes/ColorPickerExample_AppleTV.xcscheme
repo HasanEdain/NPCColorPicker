@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
-               BuildableName = "NPCColorPicker.framework"
-               BlueprintName = "NPCColorPicker"
+               BlueprintIdentifier = "63AB99301C250A3000D79A27"
+               BuildableName = "ColorPickerExample_AppleTV.app"
+               BlueprintName = "ColorPickerExample_AppleTV"
                ReferencedContainer = "container:NPCColorPicker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,9 +33,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FEF7BAC71C14B0E700FE46B4"
-               BuildableName = "NPCColorPickerTests.xctest"
-               BlueprintName = "NPCColorPickerTests"
+               BlueprintIdentifier = "63AB99401C250A3000D79A27"
+               BuildableName = "ColorPickerExample_AppleTVTests.xctest"
+               BlueprintName = "ColorPickerExample_AppleTVTests"
+               ReferencedContainer = "container:NPCColorPicker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "63AB994B1C250A3000D79A27"
+               BuildableName = "ColorPickerExample_AppleTVUITests.xctest"
+               BlueprintName = "ColorPickerExample_AppleTVUITests"
                ReferencedContainer = "container:NPCColorPicker.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,9 +53,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
-            BuildableName = "NPCColorPicker.framework"
-            BlueprintName = "NPCColorPicker"
+            BlueprintIdentifier = "63AB99301C250A3000D79A27"
+            BuildableName = "ColorPickerExample_AppleTV.app"
+            BlueprintName = "ColorPickerExample_AppleTV"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,15 +73,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
-            BuildableName = "NPCColorPicker.framework"
-            BlueprintName = "NPCColorPicker"
+            BlueprintIdentifier = "63AB99301C250A3000D79A27"
+            BuildableName = "ColorPickerExample_AppleTV.app"
+            BlueprintName = "ColorPickerExample_AppleTV"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -81,15 +92,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FEF7BABD1C14B0E700FE46B4"
-            BuildableName = "NPCColorPicker.framework"
-            BlueprintName = "NPCColorPicker"
+            BlueprintIdentifier = "63AB99301C250A3000D79A27"
+            BuildableName = "ColorPickerExample_AppleTV.app"
+            BlueprintName = "ColorPickerExample_AppleTV"
             ReferencedContainer = "container:NPCColorPicker.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
